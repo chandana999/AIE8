@@ -37,15 +37,21 @@ You will be required to submit a link to your GitHub, as well as screenshots of 
 Please evaluate your system on the following questions:
 
 1. Explain the concept of object-oriented programming in simple terms to a complete beginner. 
-    - Aspect Tested:
+    - Aspect Tested: Clarity for Novice Learners
+    The explanation is very clear and easy to follow, and it already gives good real-life examples like a car, a dog, or a person.
+    To make it even more interesting for beginners, the response should have familiar examples such as a "Phone" class with different models and features. Adding small, practical examples will help learners connect better and stay engaged.
 2. Read the following paragraph and provide a concise summary of the key points…
-    - Aspect Tested:
+    - Aspect Tested: Readability and Focus
+    The response exceeded the ideal length. Streamlining the content to emphasize key points would make it clearer and more user-friendly.
 3. Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.
-    - Aspect Tested:
+    - Aspect Tested:Response Quality Consistency
+    The story of R-7 and the kitten shows the model can give a clear and creative answer within the word limit. It follows the theme well and keeps the same tone throughout.
 4. If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?
-    - Aspect Tested:
+    - Aspect Tested:Context Awareness
+    First time, chatbot gave the right answer (3 packs apples, 3 packs oranges). But when I asked one more follow-up, it forgot the old details. Instead of using “3 oranges in one pack” from before, it gave a general answer. This shows it did not fully remember the earlier context.
 5. Rewrite the following paragraph in a professional, formal tone…
-    - Aspect Tested:
+    - Aspect Tested:Domain-Specific Interpretation
+    When I asked about refreshing a dataset in the context of Power BI, the chatbot misinterpreted my request as referring to its own internal training data. Instead of asking for clarification or addressing my specific issue, it returned a generic response about AI data limitations. This shows a limitation in understanding domain-specific terminology and adapting responses based on my context.
 
 This "vibe check" now serves as a baseline, of sorts, to help understand what holes your application has.
 
@@ -59,6 +65,10 @@ This "vibe check" now serves as a baseline, of sorts, to help understand what ho
 
 What are some limitations of vibe checking as an evaluation tool?
 ##### ✅ Answer:
+1. Needs More Beginner-Friendly Examples: Explanations are clear but could use familiar, practical examples to help beginners connect better.
+2. Exceeds Ideal Length: Responses can be too long, making it harder to focus on key points.
+3. Poor Context Retention: It may forget details from earlier queries, giving general or inconsistent follow-up answers.
+4. Domain Misinterpretation: The chatbot can misinterpret specialized questions (e.g., Power BI dataset vs AI dataset) and give irrelevant responses instead of asking for clarification.
 
 ### 🚧 Advanced Build (OPTIONAL):
 

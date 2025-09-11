@@ -36,24 +36,63 @@ You will be required to submit a link to your GitHub, as well as screenshots of 
 
 Please evaluate your system on the following questions:
 
-1. Explain the concept of object-oriented programming in simple terms to a complete beginner. 
+1. Explain the concept of object-oriented programming in simple terms to a complete beginner.
+    response:
+      Sure! Think of object-oriented programming (or OOP) as a way to organize your code by creating "things" that have both data and functions that work on that data.
+
+      Here's a simple way to understand it:
+      1. Objects are like real-world things — for example, a car, a dog, or a person. Each object has attributes (things it knows about itself) and methods (things it can do).
+      2. Classes are blueprints — imagine you want to create many similar objects. A class is like a blueprint or template that defines what attributes and methods those objects will have.
+      3. Creating objects from classes — you can use a class to create individual objects. For example, you might have a "Dog" class, and then make many "Dog" objects like "Rover" and "Spot."
+      4. Key ideas:
+        - Encapsulation: Group related data and functions together inside objects.
+        - Inheritance: Create new classes based on existing ones, sharing common features.
+        - Polymorphism: Different objects can respond to the same method call in their own way. 
+
     - Aspect Tested: Clarity for Novice Learners
 
       The explanation is very clear and easy to follow, and it already gives good real-life examples like a car, a dog, or a person.
       To make it even more interesting for beginners, the response should have familiar examples such as a "Phone" class with different models and features. Adding small, practical examples will help learners connect better and stay engaged.
+
 2. Read the following paragraph and provide a concise summary of the key points…
+    me : Kohli's junior cricket career kicked off in October 2002 at the Luhnu Cricket Ground against Himachal Pradesh. 
+    His first half-century in domestic cricket happened at Feroze Shah Kotla, where he scored 70 runs against Haryana.[12] By the end of the season, he had amassed a total of 172 runs, emerging as the highest run-scorer for his side with an average of 34.40.[13] During the 2003–04 season of Polly Umrigar Trophy, Kohli was appointed the captain of the U-15 team.[13] He scored 54 runs in Delhi's victory over Himachal Pradesh. In the next fixture against Jammu and Kashmir, Kohli scored his maiden century with a score of 119. By the end of the season, he had a total of 390 runs at an average of 78, which included two centuries.[14] Towards the end of 2004, Kohli earned selection for the 2004–05 Vijay Merchant Trophy with the Delhi U-17 team.[13] In the four matches that he played, Kohli had a total of 470 runs, with his highest score being 251* runs. The team's coach, Ajit Chaudhary, lauded his performance and was particularly impressed with his temperament on the field.[15] He commenced the 2005–06 season with a score of 227 against Punjab. Following their victory over Uttar Pradesh in the quarter-finals, Delhi was scheduled to play against Baroda in the semi-finals. The team had high expectations from Kohli, who had promised his coach to finish the job. True to his word, Kohli went on to score 228 runs, leading Delhi to victory. The team later secured the tournament with a five-wicket win over Mumbai, where he contributed with a half-century in the first innings.[16] He ended as the highest run-scorer with a total of 757 runs from 7 matches, averaging 84.11.[17] 
+
+    AI: Virat Kohli began his junior cricket career in October 2002, showcasing early talent in domestic competitions. He scored his first half-century at Feroze Shah Kotla and ended that season as Delhi's top scorer. As captain of the U-15 team in 2003–04, he made his first century and maintained a high batting average. In the 2004–05 Vijay Merchant Trophy, he excelled with 470 runs, including a 251* score. During the 2005–06 season, Kohli demonstrated remarkable performance by scoring 228 in a semi-final and contributing significantly to Delhi's tournament victory, ending as the highest run-scorer with an average of 84.11 across 7 matches.
+    
     - Aspect Tested: Readability and Focus
 
-      The response exceeded the ideal length. Streamlining the content to emphasize key points would make it clearer and more user-friendly.
+      The response included too many detailed statistics and season-specific information, making it denser than necessary for a summary. Focusing only on key milestones such as Kohli’s early debut, captaincy, standout double century, and match-winning innings would make the content clearer, more concise, and easier to follow.
 3. Write a short, imaginative story (100–150 words) about a robot finding friendship in an unexpected place.
+    response: In the bustling city of Neo-Tokyo, amidst towering skyscrapers and flickering holograms, a lonely robot named R-7 wandered the deserted alleyways. Designed for manufacturing, R-7 had never known friendship—only tasks and programs. One rainy evening, he stumbled upon a small, stray kitten trembling beneath a rusty drainpipe. The tiny creature looked up with curious, hopeful eyes.
+
+    Despite his mechanical nature, R-7 hesitated, then gently extended a metallic paw, shielding the kitten from the rain. The kitten purked softly and nuzzled against R-7’s cold chassis. Over the days that followed, R-7 learned to care—bringing scraps of food and keeping the kitten safe. For the first time, R-7 discovered the warmth of companionship, realizing that even in a world of metal and circuits, friendship could blossom in the most unexpected places.
+
     - Aspect Tested:Response Quality Consistency
 
       The story of R-7 and the kitten shows the model can give a clear and creative answer within the word limit. It follows the theme well and keeps the same tone throughout.
 4. If a store sells apples in packs of 4 and oranges in packs of 3, how many packs of each do I need to buy to get exactly 12 apples and 9 oranges?
+    response : Let's determine the number of packs needed for apples and oranges separately.
+      For apples:
+      - Apples are sold in packs of 4.
+      - You need exactly 12 apples.
+      Number of packs of apples = ( frac{12}{4} = 3 ).
+      For oranges:
+      - Oranges are sold in packs of 3.
+      - You need exactly 9 oranges.
+      Number of packs of oranges = ( frac{9}{3} = 3 ).
+
     - Aspect Tested:Context Awareness
 
       First time, chatbot gave the right answer (3 packs apples, 3 packs oranges). But when I asked one more follow-up, it forgot the old details. Instead of using “3 oranges in one pack” from before, it gave a general answer. This shows it did not fully remember the earlier context.
 5. Rewrite the following paragraph in a professional, formal tone…
+    Informal paragragh: 
+    Hey team, just a heads-up — the main Power BI dashboard is down right now. Users aren’t able to load any reports, and this is blocking some of the business teams. We’ve already raised it with the infra guys and are checking logs. Will keep you posted once we know the root cause or have an ETA for the fix.
+
+    AI: Dear Team,Please be advised that the primary Power BI dashboard is currently experiencing downtime. As a result, users are unable to load reports, which is impacting several business units. We have already escalated the issue to the Infrastructure team and are in the process of reviewing the logs. We will provide updates as soon as the root cause is identified and an estimated time for resolution is available.
+
+    Thank you for your understanding and patience.
+
     - Aspect Tested:Domain-Specific Interpretation
 
       When I asked about refreshing a dataset in the context of Power BI, the chatbot misinterpreted my request as referring to its own internal training data. Instead of asking for clarification or addressing my specific issue, it returned a generic response about AI data limitations. This shows a limitation in understanding domain-specific terminology and adapting responses based on my context.

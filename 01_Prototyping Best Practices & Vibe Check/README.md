@@ -116,10 +116,8 @@ This "vibe check" now serves as a baseline, of sorts, to help understand what ho
 
 What are some limitations of vibe checking as an evaluation tool?
 ##### ✅ Answer:
-1. Needs More Beginner-Friendly Examples: Explanations are clear but could use familiar, practical examples to help beginners connect better.
-2. Exceeds Ideal Length: Responses can be too long, making it harder to focus on key points.
-3. Poor Context Retention: It may forget details from earlier queries, giving general or inconsistent follow-up answers.
-4. Domain Misinterpretation: The chatbot can misinterpret specialized questions (e.g., Power BI dataset vs AI dataset) and give irrelevant responses instead of asking for clarification.
+
+Vibe checking shows some gaps in the system. Sometimes the answers are clear, but they don’t give small, everyday examples that beginners can easily connect with. Few times the summaries become too long with too many numbers, so the main point is lost. The system also forgets earlier context and gives new answers without linking back. In some cases, it misunderstands domain words, like mixing up Power BI dataset refresh with AI training data, and gives a wrong reply. So overall, vibe checking shows issues in clarity, memory, and domain understanding, and it is not always reliable.
 
 ### 🚧 Advanced Build (OPTIONAL):
 

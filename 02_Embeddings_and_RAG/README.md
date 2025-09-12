@@ -9,7 +9,7 @@
 
 | 📰 Session Sheet | ⏺️ Recording     | 🖼️ Slides        | 👨‍💻 Repo         | 📝 Homework      | 📁 Feedback       |
 |:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
-| [Session 2: 🗃️ Context Engineering I: RAG](https://www.notion.so/Session-2-Context-Engineering-I-Retrieval-Augmented-Generation-RAG-26acd547af3d8041a75bfa162d1ab600) | Coming soon! | Coming soon! | You are here! | Coming soon! | Coming soon!
+| [Session 2: 🗃️ Context Engineering I: RAG](https://www.notion.so/Session-2-Context-Engineering-I-Retrieval-Augmented-Generation-RAG-26acd547af3d8041a75bfa162d1ab600) |[Recording!](https://us02web.zoom.us/rec/share/cDb3c4VCrHUACpHdOl1C0u092-_GOSBb3emPfeuwZDAtUV3FTdBVMt6DGSzkU6gQ.N6_xNZ9FOiG4SYyB) (GZm4&jx*) | [Session 2 Slides](https://www.canva.com/design/DAGrSqNpTZ0/Ra4psYmdCwBeL8o1-L69WA/edit?utm_content=DAGrSqNpTZ0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | You are here! | [Session 2 Assignment: RAG](https://forms.gle/98s98cdS8vt1m5g67) | [AIE8 Feedback 9/11](https://forms.gle/hGJjwZLDm6Mcb2Ki7)
 
 
 ### Outline:

@@ -1,0 +1,7 @@
+numpy
+openai
+getpass4
+python-dotenv
+ipykernel
+PyPDF2
+requests

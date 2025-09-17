@@ -7,9 +7,9 @@
 
 ### [Quicklinks](https://github.com/AI-Maker-Space/AIE7/tree/main/00_AIM_Quicklinks)
 
-| 🤓 Pre-work | 📰 Session Sheet | ⏺️ Recording     | 🖼️ Slides        | 👨‍💻 Repo         | 📝 Homework      | 📁 Feedback       |
-|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
-| [Session 3: E2E & Use Cases](https://www.notion.so/Session-3-End-to-End-AI-Applications-OSS-Models-I-and-2025-Industry-Use-Cases-26acd547af3d80b4b646e2fd6f1fd31c) | Coming soon! | Coming soon! | You are here! | Coming soon! | Coming soon! | Coming soon!
+ 📰 Session Sheet | ⏺️ Recording     | 🖼️ Slides        | 👨‍💻 Repo         | 📝 Homework      | 📁 Feedback       |
+|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
+| [Session 3: E2E & Use Cases](https://www.notion.so/Session-3-End-to-End-AI-Applications-OSS-Models-I-and-2025-Industry-Use-Cases-26acd547af3d80b4b646e2fd6f1fd31c) |[Recording!](https://us02web.zoom.us/rec/share/7UJErmXFPnBQmIxWoeHVtCVcjtF1c_XmzAybJLGgei5Xrju_Q2jgPzgjYI8YT06o.pRQgg0m-t4-HHAmV) (*6zDd0%S) | [Session 3 Slides](https://www.canva.com/design/DAGzJw-3i34/1UdGr5HlXlPjFtabOAWdkw/edit?utm_content=DAGzJw-3i34&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | You are here! | [Session 3 Assignment: E2E](https://forms.gle/ZVvwkbg4jEpHKpCY9) | [AIE8 Feedback 9/16](https://forms.gle/9SnYW7vgNLeGpkh47)
 
 Building off last week, we're going to take our Pythonic RAG application to the next level!
 

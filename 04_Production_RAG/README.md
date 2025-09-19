@@ -7,7 +7,7 @@
 
 | 📰 Session Sheet | ⏺️ Recording     | 🖼️ Slides        | 👨‍💻 Repo         | 📝 Homework      | 📁 Feedback       |
 |:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
-| [Session 4: RAG with LangGraph, OSS Local Models, & Eval w/ LangSmith ](https://www.notion.so/Session-4-Production-Grade-RAG-with-LangChain-and-LangSmith-26acd547af3d80838d5beba464d7e701) | Coming soon! | Coming soon! | You are here! | Coming soon! | Coming soon! | Coming soon!
+| [Session 4: RAG with LangGraph, OSS Local Models, & Eval w/ LangSmith  ](https://www.notion.so/Session-4-Production-Grade-RAG-with-LangChain-and-LangSmith-26acd547af3d80838d5beba464d7e701) |[Recording!](https://us02web.zoom.us/rec/share/jEs9TS_re1f9X3y2T61Dgv_bEp6EmVzVkiYDOC-cEU8WA2tR5jMI1bwsn4L_Al1n.msDqlCRCROFBaRCH) (78y?PRTg) | [Session 4 Slides](https://www.canva.com/design/DAGzMO1y0FQ/oJaw4HMIFecP3oX9jSO4fw/edit?utm_content=DAGzMO1y0FQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | You are here! | [Session 4 Assignment: Prod. RAG](https://forms.gle/i2SdxgWX4ahFwNrCA) | [AIE8 Feedback 9/18](https://forms.gle/ymYqK5MBLAG11jDB9)
 
 # Build 🏗️
 

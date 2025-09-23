@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = "==3.12.*"
 
 [[package]]
@@ -17,6 +17,7 @@ dependencies = [
     { name = "langsmith" },
     { name = "pandas" },
     { name = "pymupdf" },
+    { name = "requests" },
 ]
 
 [package.metadata]
@@ -31,6 +32,7 @@ requires-dist = [
     { name = "langsmith", specifier = ">=0.4.4" },
     { name = "pandas", specifier = ">=2.3.0" },
     { name = "pymupdf", specifier = ">=1.26.1" },
+    { name = "requests", specifier = ">=2.32.5" },
 ]
 
 [[package]]

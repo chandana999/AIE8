@@ -15,4 +15,5 @@ dependencies = [
     "langsmith>=0.4.4",
     "pandas>=2.3.0",
     "pymupdf>=1.26.1",
+    "requests>=2.32.5",
 ]

@@ -5,9 +5,9 @@
 
 ## <h1 align="center" id="heading">Session 5: Our First Agent with LangGraph</h1>
 
-| 🤓 Pre-work | 📰 Session Sheet | ⏺️ Recording     | 🖼️ Slides        | 👨‍💻 Repo         | 📝 Homework      | 📁 Feedback       |
-|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
-|[Session 5: Agents with LangGraph and LangSmith](https://www.notion.so/Session-5-Agents-with-LangGraph-and-LangSmith-26acd547af3d80979d4dd947d02417b7) | Coming soon! | Coming soon! | You are here! | Coming soon! | Coming soon! | Coming soon!
+| 📰 Session Sheet | ⏺️ Recording     | 🖼️ Slides        | 👨‍💻 Repo         | 📝 Homework      | 📁 Feedback       |
+|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
+| [Session 5: Agents with LangGraph and LangSmith](https://www.notion.so/Session-5-Agents-with-LangGraph-and-LangSmith-26acd547af3d80979d4dd947d02417b7) |[Recording!](https://us02web.zoom.us/rec/share/3Hn_gGZIUORycGT03YF4cJ7dZgdNxEdS0wUMWv1kRML5k5N-oggioJsc_d61TjiF.YhVuqfIOUZR-9l7a) (RibU3@Yh) | [Session 5 Slides](https://www.canva.com/design/DAGz1dqlRVA/nUR35BCEXtNxy1K6xHlmHA/edit?utm_content=DAGz1dqlRVA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | You are here! | [Session 5 Assignment: Agents](https://forms.gle/UoSaiz3siUSxioco6) | [AIE8 Feedback 9/23](https://forms.gle/AQ1U3zMSUiKT7SRM8)
 
 
 

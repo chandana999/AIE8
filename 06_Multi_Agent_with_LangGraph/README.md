@@ -13,21 +13,27 @@
 In today's assignment, we'll be creating a MULTI-Agentic LangGraph Application.
 
 - 🤝 Breakout Room #1:
-  1. Simple LCEL RAG
-  2. Helper Functions for Agent Graphs
-  3. Research Team - A LangGraph for Researching A Specific Topic
+  - Task 1. Simple LangGraph RAG
+  - Task 2. Helper Functions for Agent Graphs
+  - Task 3. Research Team - A LangGraph for Researching A Specific Topic
   
 - 🤝 Breakout Room #2:
-  1. Document Writing Team - A LangGraph for Writing, Editing, and Planning a LinkedIn post.
-  2. Meta-Supervisor and Full Graph
+  + Task 4. Document Writing Team - A LangGraph for Writing, Editing, and Planning a LinkedIn post.
+  + Task 5. Meta-Supervisor and Full Graph
 
-### 🚧 OPTIONAL: Advanced Build
+### Advanced Build
 
-> NOTE: This is an optional task - and is not required to achieve full marks on the assignment.
+<details>
+<summary>🚧 Advanced Build 🚧 (OPTIONAL - <i>open this section for the requirements</i>)</summary>
+<br />
 
-Build a graph to produce a social media post about a given Machine Learning paper. 
+>NOTE: This can be done in place of the Main Assignment
+
+Build a graph to produce a social media post about a given Machine Learning paper.
 
 The graph should employ an additional team that verifies the correctness of the produced paper, and verify it fits the theme and style of your selected social media platform.
+
+</details>
 
 ## Ship 🚢
 
@@ -70,19 +76,28 @@ Feel free to reach out if you're curious or would like to collaborate on similar
 ### Main Homework Assignment
 
 Follow these steps to prepare and submit your homework assignment:
-1. Create a branch of your `AIE7` repo to track your changes. Example command: `git checkout -b s06-assignment`
+1. Create a branch of your `AIE8` repo to track your changes. Example command: `git checkout -b s06-assignment`
 2. Respond to the activities and questions in the `Multi_Agent_RAG_LangGraph.ipynb` notebook:
     + Edit the markdown cells of the activities and questions then enter your responses
     + Edit/Create code cell(s) where necessary as part of an activity
-    + NOTE: Remember to create a header (example: `##### ✅ Answer:`) to help the grader find your responses
 3. Commit, and push your completed notebook to your `origin` repository. _NOTE: Do not merge it into your main branch._
 4. Make sure to include all of the following on your Homework Submission Form:
     + The GitHub URL to the completed notebook _on your assignment branch (not main)_
     + The URL to your Loom Video
-    + Your Three lessons learned/not yet learned
+    + Your Three Lessons Learned/Not Yet Learned
     + The URLs to any social media posts (LinkedIn, X, Discord, etc.) ⬅️ _easy Extra Credit points!_
 
-### Advanced Build
-In addition to the above, include on your homework submission form the URLs to your Advanced Build's:
-+ GitHub Repo
-+ Production Deployment
+### Advanced Build 
+<details>
+  <summary>Open this section for the submission instructions.</summary>
+
+1. Complete the requirements for the Advanced Build
+2. Make sure to include all of the following on your Homework Submission Form:
+    + The GitHub URL _on your assignment branch (not main)_ to either:
+      + the notebook you created or
+      + the `src` folder
+    + The URL to your Loom Video
+    + Your Three Lessons Learned/Not Yet Learned
+    + The URLs to any social media posts (LinkedIn, X, Discord, etc.) ⬅️ _easy Extra Credit points!_
+
+</details>

@@ -1,0 +1,16 @@
+[project]
+name = "06-multi-agent-with-langgraph"
+version = "0.1.0"
+description = "Multi Agent Workflow with LangGraph"
+readme = "README.md"
+requires-python = "==3.13.*"
+dependencies = [
+    "ipykernel>=6.30.1",
+    "jupyter>=1.1.1",
+    "langchain-community>=0.3.29",
+    "langchain-openai>=0.3.33",
+    "langchain-qdrant>=0.2.1",
+    "langgraph>=0.6.7",
+    "pymupdf>=1.26.4",
+    "pyppeteer>=2.0.0",
+]

@@ -82,7 +82,7 @@ Feel free to reach out if you're curious or would like to collaborate on similar
 ### Main Homework Assignment
 
 Follow these steps to prepare and submit your homework assignment:
-1. Create a branch of your `AIE7` repo to track your changes. Example command: `git checkout -b s07-assignment`
+1. Create a branch of your `AIE8` repo to track your changes. Example command: `git checkout -b s07-assignment`
 2. Respond to the activities and questions in the `Synthetic_Data_Generation_RAGAS_&_LangSmith_Assignment.ipynb` notebook:
     + Edit the markdown cells of the activities and questions then enter your responses
     + Edit/Create code cell(s) where necessary as part of an activity

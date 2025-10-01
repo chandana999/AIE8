@@ -6,9 +6,9 @@
 
 ## <h1 align="center" id="heading">Session 7: Synthetic Data Generation and LangSmith</h1>
 
-| 🤓 Pre-work | 📰 Session Sheet | ⏺️ Recording     | 🖼️ Slides        | 👨‍💻 Repo         | 📝 Homework      | 📁 Feedback       |
-|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
-
+| 📰 Session Sheet | ⏺️ Recording     | 🖼️ Slides        | 👨‍💻 Repo         | 📝 Homework      | 📁 Feedback       |
+|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
+| [Session 7: Synthetic Data Generation for Evaluation](https://www.notion.so/Session-7-Synthetic-Data-Generation-for-Evaluation-26acd547af3d80bd9db1e9ad8f41880e) |[Recording!](https://us02web.zoom.us/rec/share/5UU96rLGvm2q24vJQ19YnVJqDHkh_D7GB7P7dL_qDXPNs0-IRva4kl235y_ThbMJ.ErOuS4jux1UdX-OV) (pu@$1QU7) | [Session 7 Slides](https://www.canva.com/design/DAG0feUex_k/JTZF3nbvZe6aBGTeuzfa8w/edit?utm_content=DAG0feUex_k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | You are here! | [Session 7 Assignment: SDG](https://forms.gle/4MBF8HiZSgjXvCZq9) | [AIE8 Feedback 9/30](https://forms.gle/ut8SuMcYVZMSnAks7)
 
 In today's assignment, we'll be creating Synthetic Data, and using it to benchmark (and improve) a LCEL RAG Chain.
 

@@ -1,0 +1,22 @@
+[project]
+name = "08-evaluating-rag-with-ragas"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.13"
+dependencies = [
+    "langchain>=0.3.14",
+    "langchain-community>=0.3.29",
+    "langchain-openai>=0.3.33",
+    "langchain-qdrant>=0.2.1",
+    "langgraph==0.6.7",
+    "ragas==0.2.10",
+    "langchain-cohere==0.4.4",
+    "cohere>=5.12.0,<5.13.0", 
+    "qdrant-client>=1.7.0",
+    "pymupdf>=1.24.0",
+    "jupyter>=1.1.1",
+    "rapidfuzz>=3.0.0",
+    "pyppeteer>=2.0.0",
+    "ipykernel>=6.30.1",
+]

@@ -5,8 +5,9 @@
 
 ## <h1 align="center" id="heading">Session 8: Evaluating RAG with Ragas</h1>
 
-| 🤓 Pre-work | 📰 Session Sheet | ⏺️ Recording     | 🖼️ Slides        | 👨‍💻 Repo         | 📝 Homework      | 📁 Feedback       |
-|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
+| 📰 Session Sheet | ⏺️ Recording     | 🖼️ Slides        | 👨‍💻 Repo         | 📝 Homework      | 📁 Feedback       |
+|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
+| [Session 8: RAG Evaluation and Assessment](https://www.notion.so/Session-8-RAG-Evaluation-and-Assessment-26acd547af3d804895d5fff253b7aff2) |[Recording!](https://us02web.zoom.us/rec/share/qyMTxP5AjaK5broHfiotCvMa1dDCRTaSB25UZKCxAMVjhKQheZFAbloVjqQVobgM.M-MSJ4k6Ok9Y2fXq) (=SkTy7Q!) | [Session 8 Slides](https://www.canva.com/design/DAG0rMu5dMs/38MBv-Dly5Y0wBvfzqYixQ/edit?utm_content=DAG0rMu5dMs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | You are here! | [Session 8 Assignment: Evals](https://forms.gle/7P4rv4oPBxhZAx2e7) | [AIE8 Feedback 10/2](https://forms.gle/sZ6RHUUFcuoZgG7x5)
 
 In today's assignment, we'll be creating Synthetic Data, and using it to benchmark (and improve) a LCEL RAG Chain.
 

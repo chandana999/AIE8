@@ -1,0 +1,51 @@
+Project Title,Project Domain,Secondary Domain,Description,Judge Comments,Score,Project Name,Judge Score
+InsightAI 1,Security,Finance / FinTech,A low-latency inference system for multimodal agents in autonomous systems.,Technically ambitious and well-executed.,85,Project Aurora,9.5
+ShopSmart 2,Developer Tools / DevEx,Productivity Assistants,A simulation environment for embodied AI agents using Unreal integration.,Excellent technical depth and presentation clarity.,67,OmniPath,8.1
+WealthifyAI 3,Developer Tools / DevEx,Security,A medical imaging solution improving early diagnosis through vision transformers.,Well-structured and scalable; good potential for commercialization.,91,SynthMind,8.6
+MediMind 4,E‑commerce / Marketplaces,Finance / FinTech,A generative model enabling adaptive speech synthesis for accessibility.,Excellent technical depth and presentation clarity.,70,TerraMind,7.0
+AutoMate 5,Finance / FinTech,Healthcare / MedTech,A bioinformatics pipeline leveraging transformers for genome annotation.,A forward-looking idea with solid supporting data.,94,EchoLens,8.6
+TrendLens 6,Developer Tools / DevEx,Writing & Content,An interactive 3D environment for generative design and architecture.,A clever solution with measurable environmental benefit.,88,LatticeFlow,9.0
+PlanPilot 7,Research & Knowledge,Legal / Compliance,A low-latency inference system for multimodal agents in autonomous systems.,Great clarity in communication and demo flow.,60,EchoLens,6.9
+InsightAI 8,Legal / Compliance,QA / Testing / Validation,A graph neural network framework for industrial process optimization.,Solid work with impressive real-world impact.,60,BioForge,9.7
+ChatBridge 9,Legal / Compliance,Healthcare / MedTech,A bioinformatics pipeline leveraging transformers for genome annotation.,Strong quantitative results; add qualitative analysis next time.,97,BioForge,7.5
+MediMind 10,Customer Support / Helpdesk,Healthcare / MedTech,A real-time object tracking system built on efficient Mamba-style attention.,Well-structured and scalable; good potential for commercialization.,95,SynthMind,8.5
+AutoMate 11,E‑commerce / Marketplaces,QA / Testing / Validation,A reinforcement learning setup for optimizing energy efficiency in data centers.,"Strong execution, though UI design feels rushed.",97,HoloFlow,7.5
+SecureNest 12,Security,Writing & Content,A low-latency inference system for multimodal agents in autonomous systems.,A forward-looking idea with solid supporting data.,73,Neural Canvas,6.7
+TaskFlow 13,Legal / Compliance,E‑commerce / Marketplaces,A dynamic model pruning toolkit that reduces compute costs by 40%.,Minor issues with integration but otherwise very polished.,67,Neural Canvas,9.1
+DocuCheck 14,Research & Knowledge,Security,An adaptive fine-tuning pipeline for multilingual reasoning models.,Technically ambitious and well-executed.,62,DeepHarvest,7.8
+LearnWise 15,Sales / CRM,QA / Testing / Validation,An automated data labeling assistant powered by instruction-tuned LLMs.,Solid work with impressive real-world impact.,65,BioForge,7.0
+WealthifyAI 16,QA / Testing / Validation,Finance / FinTech,A federated learning toolkit improving privacy in healthcare applications.,Comprehensive and technically mature approach.,80,PixelSense,8.4
+MediMind 17,Security,Legal / Compliance,A medical imaging solution improving early diagnosis through vision transformers.,Exceeds expectations in creativity and usability.,90,BioForge,7.8
+SecureNest 18,Productivity Assistants,Customer Support / Helpdesk,A synthetic data generator for low-resource domain adaptation tasks.,Great clarity in communication and demo flow.,82,TerraMind,8.3
+TrendLens 19,Writing & Content,Finance / FinTech,A federated learning toolkit improving privacy in healthcare applications.,Technically ambitious and well-executed.,92,GreenPulse,8.9
+GuardBot 20,Creative / Design / Media,Healthcare / MedTech,A synthetic data generator for low-resource domain adaptation tasks.,"Strong execution, though UI design feels rushed.",61,SkyForge,8.5
+MediMind 21,Data / Analytics,Customer Support / Helpdesk,A bioinformatics pipeline leveraging transformers for genome annotation.,Creative use of multimodal learning; documentation could improve.,97,AutoVerse,8.4
+PlanPilot 22,Healthcare / MedTech,Developer Tools / DevEx,A synthetic data generator for low-resource domain adaptation tasks.,Well-structured and scalable; good potential for commercialization.,92,BioForge,7.5
+Pathfinder 23,Data / Analytics,E‑commerce / Marketplaces,A neural art generator blending classical styles with modern techniques.,Excellent code quality and use of open-source libraries.,97,TerraMind,7.6
+Pathfinder 24,Healthcare / MedTech,Security,An AI-powered platform optimizing logistics routes for sustainability.,Well-structured and scalable; good potential for commercialization.,67,LatticeFlow,7.7
+Pathfinder 25,Sales / CRM,Customer Support / Helpdesk,A federated learning toolkit improving privacy in healthcare applications.,Promising idea with robust experimental validation.,81,LatticeFlow,9.6
+QuickQuote 26,Creative / Design / Media,Data / Analytics,A generative model enabling adaptive speech synthesis for accessibility.,Exceeds expectations in creativity and usability.,67,VisionTrail,9.2
+Pathfinder 27,Finance / FinTech,Research & Knowledge,An AI model compression suite enabling on-device reasoning for IoT sensors.,Excellent code quality and use of open-source libraries.,81,DataWeave,9.8
+SecureNest 28,Legal / Compliance,Finance / FinTech,A hardware-aware model quantization benchmark suite.,Conceptually strong but results need more benchmarking.,90,EchoLens,9.0
+PlanPilot 29,Research & Knowledge,Creative / Design / Media,A hardware-aware model quantization benchmark suite.,Minor issues with integration but otherwise very polished.,93,OmniPath,9.2
+LearnWise 30,E‑commerce / Marketplaces,Customer Support / Helpdesk,A graph neural network framework for industrial process optimization.,Exceeds expectations in creativity and usability.,64,NanoLink,7.4
+SkillMatch 31,Developer Tools / DevEx,QA / Testing / Validation,A medical imaging solution improving early diagnosis through vision transformers.,Outstanding collaboration and well-articulated research scope.,81,VisionTrail,7.9
+TrendLens 32,Writing & Content,Research & Knowledge,A document summarization and retrieval system for enterprise knowledge bases.,"Strong execution, though UI design feels rushed.",68,Neural Canvas,8.7
+CreateFlow 33,Customer Support / Helpdesk,E‑commerce / Marketplaces,A generative model enabling adaptive speech synthesis for accessibility.,Creative use of multimodal learning; documentation could improve.,66,Neural Canvas,7.6
+GuardBot 34,Productivity Assistants,Writing & Content,A real-time object tracking system built on efficient Mamba-style attention.,Conceptually strong but results need more benchmarking.,83,VisionTrail,9.1
+PlanPilot 35,Writing & Content,Finance / FinTech,A federated learning toolkit improving privacy in healthcare applications.,A clever solution with measurable environmental benefit.,94,SkyForge,8.4
+InsightAI 36,Security,Legal / Compliance,A synthetic data generator for low-resource domain adaptation tasks.,Strong quantitative results; add qualitative analysis next time.,82,SoundScape,7.6
+PulseAI 37,E‑commerce / Marketplaces,Research & Knowledge,A multimodal captioning system trained on open-weights datasets.,Outstanding collaboration and well-articulated research scope.,80,SkyForge,6.9
+TaskFlow 38,Creative / Design / Media,Developer Tools / DevEx,A real-time object tracking system built on efficient Mamba-style attention.,An elegant and pragmatic engineering solution.,64,NanoLink,7.3
+LearnWise 39,Data / Analytics,Legal / Compliance,An AI model compression suite enabling on-device reasoning for IoT sensors.,Strong quantitative results; add qualitative analysis next time.,78,AetherCompute,6.9
+WealthifyAI 40,Legal / Compliance,Productivity Assistants,A multimodal captioning system trained on open-weights datasets.,Conceptually strong but results need more benchmarking.,67,HoloFlow,7.5
+CreateFlow 41,Customer Support / Helpdesk,Creative / Design / Media,A federated learning toolkit improving privacy in healthcare applications.,Solid work with impressive real-world impact.,76,SynthMind,7.7
+TrendLens 42,Finance / FinTech,Customer Support / Helpdesk,A generative model enabling adaptive speech synthesis for accessibility.,A clever solution with measurable environmental benefit.,65,EchoLens,6.7
+CreateFlow 43,Productivity Assistants,Developer Tools / DevEx,A medical imaging solution improving early diagnosis through vision transformers.,A forward-looking idea with solid supporting data.,62,HoloFlow,6.5
+ChatBridge 44,Creative / Design / Media,QA / Testing / Validation,A hardware-aware model quantization benchmark suite.,Solid work with impressive real-world impact.,96,AutoVerse,6.7
+SkillMatch 45,Customer Support / Helpdesk,Writing & Content,A real-time object tracking system built on efficient Mamba-style attention.,A clever solution with measurable environmental benefit.,87,AetherCompute,7.7
+WealthifyAI 46,Finance / FinTech,QA / Testing / Validation,A graph neural network framework for industrial process optimization.,Excellent technical depth and presentation clarity.,88,BioForge,7.1
+DocuCheck 47,Finance / FinTech,Writing & Content,An AI-powered platform optimizing logistics routes for sustainability.,Conceptually strong but results need more benchmarking.,87,SynthMind,9.6
+MediMind 48,Healthcare / MedTech,QA / Testing / Validation,An interactive 3D environment for generative design and architecture.,Great innovation but needs stronger evaluation metrics.,96,AutoVerse,7.5
+SecureNest 49,E‑commerce / Marketplaces,Legal / Compliance,A document summarization and retrieval system for enterprise knowledge bases.,Comprehensive and technically mature approach.,92,PixelSense,9.2
+PulseAI 50,Productivity Assistants,Finance / FinTech,An adaptive fine-tuning pipeline for multilingual reasoning models.,Technically ambitious and well-executed.,95,SoundScape,8.0

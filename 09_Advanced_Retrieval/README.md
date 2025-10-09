@@ -4,9 +4,9 @@
 </p>
 
 ## <h1 align="center" id="heading">Advanced Retrieval with LangChain</h1>
-| 🤓 Pre-work | 📰 Session Sheet | ⏺️ Recording     | 🖼️ Slides        | 👨‍💻 Repo         | 📝 Homework      | 📁 Feedback       |
-|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
-
+| 📰 Session Sheet | ⏺️ Recording     | 🖼️ Slides        | 👨‍💻 Repo         | 📝 Homework      | 📁 Feedback       |
+|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
+| [Session 9: Advanced Retrieval Methods for RAG](https://www.notion.so/Session-9-Advanced-Retrieval-Methods-for-RAG-26acd547af3d80e09009c93c05f83932) |[Recording!](https://us02web.zoom.us/rec/share/FBAHsqyAqZJH2eCSM2ymIlfuC6Vbvn8PRj18os7JXRNGaQwNSODbr8p-l-lHdQ.UkfCFu5yBe4Uu1yN) (7Mvk=Zk^) | [Session 9 Slides](https://www.canva.com/design/DAG1JOanotQ/MdHirX2I1BLgpWTUKMg_yg/edit?utm_content=DAG1JOanotQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | You are here! | [Session 9 Assignment: Advanced Retrieval](https://github.com/AI-Maker-Space/AIE8/tree/main/09_Advanced_Retrieval) | [AIE8 Feedback 10/7](https://forms.gle/ty3AoLmWqBqg99rn8)
 
 
 ### Steps to Run:

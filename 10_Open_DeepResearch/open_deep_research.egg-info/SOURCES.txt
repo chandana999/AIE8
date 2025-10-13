@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+open_deep_library/configuration.py
+open_deep_library/deep_researcher.py
+open_deep_library/prompts.py
+open_deep_library/state.py
+open_deep_library/utils.py
+open_deep_research.egg-info/PKG-INFO
+open_deep_research.egg-info/SOURCES.txt
+open_deep_research.egg-info/dependency_links.txt
+open_deep_research.egg-info/requires.txt
+open_deep_research.egg-info/top_level.txt

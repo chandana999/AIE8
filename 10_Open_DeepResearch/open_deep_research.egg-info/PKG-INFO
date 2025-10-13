@@ -1,0 +1,106 @@
+Metadata-Version: 2.4
+Name: open_deep_research
+Version: 0.0.16
+Summary: Planning, research, and report generation.
+Author: Chris Alexiuk
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: langgraph>=0.5.4
+Requires-Dist: langchain-community>=0.3.9
+Requires-Dist: langchain-openai>=0.3.28
+Requires-Dist: langchain-anthropic>=0.3.15
+Requires-Dist: langchain-mcp-adapters>=0.1.6
+Requires-Dist: langchain-deepseek>=0.1.2
+Requires-Dist: langchain-tavily
+Requires-Dist: langchain-groq>=0.2.4
+Requires-Dist: openai>=1.99.2
+Requires-Dist: tavily-python>=0.5.0
+Requires-Dist: arxiv>=2.1.3
+Requires-Dist: pymupdf>=1.25.3
+Requires-Dist: xmltodict>=0.14.2
+Requires-Dist: linkup-sdk>=0.2.3
+Requires-Dist: duckduckgo-search>=3.0.0
+Requires-Dist: exa-py>=1.8.8
+Requires-Dist: requests>=2.32.3
+Requires-Dist: beautifulsoup4==4.13.3
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: pytest
+Requires-Dist: httpx>=0.24.0
+Requires-Dist: markdownify>=0.11.6
+Requires-Dist: azure-identity>=1.21.0
+Requires-Dist: azure-search>=1.0.0b2
+Requires-Dist: azure-search-documents>=11.5.2
+Requires-Dist: rich>=13.0.0
+Requires-Dist: langgraph-cli[inmem]>=0.3.1
+Requires-Dist: langsmith>=0.3.37
+Requires-Dist: langchain-google-vertexai>=2.0.25
+Requires-Dist: langchain-google-genai>=2.1.5
+Requires-Dist: ipykernel>=6.29.5
+Requires-Dist: supabase>=2.15.3
+Requires-Dist: mcp>=1.9.4
+Requires-Dist: langchain-aws>=0.2.28
+Requires-Dist: pandas>=2.3.1
+Requires-Dist: jupyter>=1.1.1
+Requires-Dist: pypdf>=6.1.1
+Requires-Dist: pypdf2>=3.0.1
+Provides-Extra: dev
+Requires-Dist: mypy>=1.11.1; extra == "dev"
+Requires-Dist: ruff>=0.6.1; extra == "dev"
+
+<p align = "center" draggable=”false” ><img src="https://github.com/AI-Maker-Space/LLM-Dev-101/assets/37101144/d1343317-fa2f-41e1-8af1-1dbb18399719" 
+     width="200px"
+     height="auto"/>
+</p>
+
+## <h1 align="center" id="heading">Session 10: Open DeepResearch with LangGraph</h1>
+
+| 🤓 Pre-work | 📰 Session Sheet | ⏺️ Recording     | 🖼️ Slides        | 👨‍💻 Repo         | 📝 Homework      | 📁 Feedback       |
+|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
+
+
+### Steps to Run:
+
+1. Run `uv sync`
+2. Run through the notebook. 
+
+# Build 🏗️
+
+Run the notebook and complete the following:
+
+- 🤝 Breakout Room Part #1
+  - Work through Deep Research Implementation
+
+# Ship 🚢
+
+- The completed notebook. 
+- 5min. Loom Video
+
+# Share 🚀
+- Walk through your notebook and explain what you've completed in the Loom video
+- Make a social media post about your final application and tag @AIMakerspace
+- Share 3 lessons learned
+- Share 3 lessons not learned
+
+# Submitting Your Homework
+
+### Main Homework Assignment
+
+Follow these steps to prepare and submit your homework assignment:
+1. Create a branch of your `AIE8` repo to track your changes. Example command: `git checkout -b s10-assignment`
+2. Study the `open-deep-research.ipynb` notebook as you run it.
+3. Commit, and push your completed notebook to your `origin` repository. _NOTE: Do not merge it into your main branch._
+5. Record a Loom video reviewing the content of your completed notebook
+6. Make sure to include all of the following on your Homework Submission Form:
+    + The GitHub URL to the `open-deep-research.ipynb` notebook _on your assignment branch (not main)_
+    + The URL to your Loom Video
+    + Your Three lessons learned/not yet learned
+    + The URLs to any social media posts (LinkedIn, X, Discord, etc.) ⬅️ _easy Extra Credit points!_
+
+### OPTIONAL: 🚧 Advanced Build Assignment 🚧
+>***NOTE: There is no Advanced Build Assignment for this session.***
+>
+>That said, when you have some time (even if it is after the bootcamp!) be sure to work through the Next Steps at the end of this notebook:
+>1. Extend and enhance the system via additional tools, prompts, changing models, persistence, etc
+>2. Practice production deploy processes
+>3. Learn more by studying the linked docucmentation

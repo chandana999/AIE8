@@ -1,0 +1,7 @@
+Experiment,Status,Duration,Nodes_Executed,Supervisor_Loops,Tool_Calls_Total,Notes_Collected,Report_Length,Clarification_Ran,Search_API,Error_Message
+Increased Parallelism,Success,142.27,4,1,0,0,627,True,tavily,
+Deeper Research,Success,187.58,4,1,0,0,627,True,tavily,
+Anthropic Native Search,Partial Success,0.02,0,0,0,0,0,False,SearchAPI.ANTHROPIC,"1 validation error for Configuration
+search_api
+  Input should be 'anthropic', 'openai', 'tavily' or"
+Disabled Clarification,Success,201.14,4,1,0,0,627,True,tavily,

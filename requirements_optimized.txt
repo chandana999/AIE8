@@ -1,0 +1,33 @@
+# Optimized RAG Evaluation Requirements
+# ====================================
+
+# Core LangChain packages
+langchain>=0.1.0
+langchain-community>=0.0.20
+langchain-openai>=0.0.5
+langchain-core>=0.1.0
+langchain-experimental>=0.0.50
+
+# Vector stores and retrievers
+qdrant-client>=1.7.0
+langchain-qdrant>=0.0.1
+
+# Reranking
+langchain-cohere>=0.0.1
+
+# RAGAS for evaluation
+ragas>=0.1.0
+
+# LangSmith for tracing
+langsmith>=0.0.80
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Document processing
+pymupdf>=1.23.0
+
+# Utilities
+python-dotenv>=1.0.0
+tqdm>=4.65.0

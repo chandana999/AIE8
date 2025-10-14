@@ -1,0 +1,24 @@
+
+# Machine Learning Fundamentals
+
+Machine learning is a subset of artificial intelligence that focuses on algorithms 
+that can learn from data. There are three main types:
+
+1. Supervised Learning: Learning with labeled examples
+2. Unsupervised Learning: Finding patterns in unlabeled data  
+3. Reinforcement Learning: Learning through trial and error
+
+## Key Concepts
+
+- Training Data: The data used to train the model
+- Features: Input variables used to make predictions
+- Labels: The target variable we want to predict
+- Model: The algorithm that learns from the data
+
+## Applications
+
+Machine learning is used in many fields including:
+- Computer Vision
+- Natural Language Processing
+- Recommendation Systems
+- Autonomous Vehicles

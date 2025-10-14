@@ -1,0 +1,29 @@
+experiment,Latency (s),Cost ($)
+Semantic Chunk Retriever,4.615286,0.0009513
+Ensemble Retriever,9.845763,0.00193515
+Parent Retriever,4.458081,0.0003738
+Unknown,8.618365,0.0017688
+Compression Retriever,6.986509,0.00051405
+BM25 Retriever,4.892648,0.00061725
+Naive Retriever,5.952199,0.00134595
+Semantic Chunk Retriever,2.662678,0.00075045
+Ensemble Retriever,14.916098,0.00245565
+Parent Retriever,2.554048,0.00055575
+Multi-Query Retriever,5.634034,0.0018174
+Compression Retriever,11.103829,0.00038595
+BM25 Retriever,3.137493,0.00045135
+Naive Retriever,3.075658,0.0010536
+Semantic Chunk Retriever,2.38927,0.0005433
+Ensemble Retriever,15.728433,0.00259635
+Parent Retriever,1.826137,0.00052605
+Multi-Query Retriever,3.617046,0.001644
+Compression Retriever,9.823716,0.00042615
+BM25 Retriever,2.278733,0.00045045
+Naive Retriever,2.040272,0.0008025
+Semantic Chunk Retriever,10.967686,0.001047
+Ensemble Retriever,31.690867,0.0021231
+Parent Retriever,10.180084,0.0006117
+Multi-Query Retriever,15.019161,0.00164715
+Compression Retriever,17.901082,0.0007308
+BM25 Retriever,6.573868,0.00077475
+Naive Retriever,14.055622,0.00158595

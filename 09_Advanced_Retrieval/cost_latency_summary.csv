@@ -1,0 +1,9 @@
+experiment,Avg Latency (s),Run Count,Avg Cost ($)
+Compression Retriever,11.4538,4,0.0005142375
+Parent Retriever,4.7546,4,0.000516825
+BM25 Retriever,4.2207,4,0.00057345
+Semantic Chunk Retriever,5.1587,4,0.0008230125
+Naive Retriever,6.2809,4,0.001197
+Multi-Query Retriever,8.0901,3,0.00170285
+Unknown,8.6184,1,0.0017688
+Ensemble Retriever,18.0453,4,0.0022775625

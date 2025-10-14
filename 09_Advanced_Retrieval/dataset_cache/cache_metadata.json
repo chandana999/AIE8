@@ -1,0 +1,17 @@
+{
+  "54e0f4b7c97d12d0727bba81fe55268b": {
+    "filepath": "./data/Projects_with_Domains.csv",
+    "mtime": 1759878629.7529807,
+    "size": 10090,
+    "metadata_columns": [
+      "Description",
+      "Judge Comments",
+      "Judge Score",
+      "Project Domain",
+      "Project Name",
+      "Project Title",
+      "Score",
+      "Secondary Domain"
+    ]
+  }
+}

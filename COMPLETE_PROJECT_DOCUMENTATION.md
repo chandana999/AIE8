@@ -2,29 +2,27 @@
 
 ## Task 1: Log Analysis Problem and Audience
 
-### 1. What problem are you trying to solve?  
+### Problem Statement
 **Problem:** Site Reliability Engineers (SREs) and DevOps teams face significant challenges in quickly analyzing web server, application, and database logs to identify root causes, understand error patterns, and determine remediation steps during critical incidents, compounded by the need to provide accurate incident analysis under time pressure.
 
-Why is this a problem?
-
+### Why is this a problem?
 For Site Reliability Engineers (SREs), this problem manifests as a daily crisis during production incidents. When users report slow login times or 500 errors, SREs are immediately under pressure to restore service while analyzing thousands of log entries across web servers, application tiers, and databases. The current manual process requires them to correlate error patterns across multiple log sources, identify temporal relationships between failures, and determine whether a 502 error is caused by a slow database query, application thread pool exhaustion, or network issues. This detective work, which should take minutes, often consumes hours as SREs struggle to piece together the complete picture from fragmented log data. The business impact is severe: every minute of extended downtime costs enterprises an average of $5,600, and SREs spend 60% of their incident response time on log analysis alone.
 
-### 2. What is your proposed **solution**?  
-An **AI-powered Log Analysis Platform** using **Retrieval-Augmented Generation (RAG)** and **advanced multi-retriever techniques** to automate error pattern detection, log correlation, and root cause identification.  
-The system integrates **semantic retrieval (vector search)**, **keyword-based retrieval (BM25)**, **query expansion (multi-query retrievers)**, and **context compression** to provide accurate, context-aware, and explainable analysis results.
-
-**Why is this the best solution?**  
-Unlike manual or rule-based systems, this AI-driven approach can understand **log semantics**, detect **hidden error relationships**, and generate **remediation recommendations in real time**.  
-It reduces analysis time by **70%**, increases **root cause accuracy to 95%**, and standardizes how SREs investigate incidents improving both speed and reliability during critical events.
-
 ### Success Metrics
- Goals:
+**Quantitative Goals:**
+- Reduce Incident Analysis Time by 70% (from 4 hours to 1.2 hours)
+- Increase First-Call Resolution Rate by 50%
+- Decrease Mean Time to Recovery (MTTR) by 60%
+- Improve Root Cause Accuracy to 95%
+- Reduce False Positive Rate by 60%
+
+**Qualitative Goals:**
 - Enhanced SRE Confidence: Engineers feel more prepared for complex incidents
 - Improved Knowledge Transfer: Better sharing of expertise between team members
 - Standardized Procedures: Consistent approach to incident analysis across all teams
 - Proactive Identification: Early detection of potential issues before they become incidents
 
-### 3 Target Audience
+### Target Audience
 **Primary Audience: Site Reliability Engineers (SREs)**
 - Experience Level: Mid to Senior level (2+ years)
 - Daily Challenges: Responding to production incidents with limited time, analyzing logs from multiple system components, coordinating with development teams for fixes
@@ -39,6 +37,8 @@ It reduces analysis time by **70%**, increases **root cause accuracy to 95%**, a
 - Experience Level: All levels
 - Needs: Understanding how application issues manifest in logs, learning from production incidents, implementing preventive measures, receiving clear guidance on fixes
 - Frustrations: Unclear incident reports from SREs, difficulty understanding log correlation, need for actionable remediation steps
+
+
 
 ## Task 2: Proposed Solution
 

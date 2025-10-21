@@ -170,6 +170,15 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 ### Build an end-to-end prototype and deploy it to a local endpoint
 
+<img width="1580" height="828" alt="image" src="https://github.com/user-attachments/assets/c175ec79-d91c-4965-8ef7-bb486da72c93" />
+
+<img width="1490" height="766" alt="image" src="https://github.com/user-attachments/assets/cd3ea449-2ef3-4807-aaa8-b9353ddd1b97" />
+
+<img width="1105" height="685" alt="image" src="https://github.com/user-attachments/assets/25519b4c-fa54-4dcb-ac56-ca751141c5bc" />
+
+
+
+
 **✅ COMPLETED:** See AIE7-Cert-Challenge | README | Frontend README | Backend README
 
 **Deployment Status:**

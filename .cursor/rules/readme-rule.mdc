@@ -1,0 +1,35 @@
+description: Style guide for fun, approachable, yet technically accurate README files
+globs: README.md
+alwaysApply: true
+---
+### README.md Rules
+
+- Make READMEs dope: fun, friendly, and approachable.
+- Stay technically accurate; never trade precision for vibes.
+- Lead with a short TL;DR and a crisp value prop.
+- Add a Quickstart with copy-paste commands that work on macOS/Windows/Linux.
+- Include "Run locally" and (if relevant) "Deploy" steps; prefer Next.js + Vercel examples when applicable.
+- Prefer examples over prose; show minimal working snippets.
+- Keep sections scannable: short paragraphs, bullet lists, clear headings.
+- Use emoji sparingly for signposts (not in code blocks, and not where tooling expects exact headings).
+- Show how to configure environment variables safely; use placeholders like YOUR_API_KEY rather than real secrets.
+- Add troubleshooting and common gotchas if any.
+- Include license and attribution at the end.
+
+### Recommended sections
+1. TL;DR
+2. Features
+3. Demo/Screenshot (optional)
+4. Quickstart
+5. Configuration (env vars, keys, settings)
+6. Run locally
+7. Test
+8. Deploy (e.g., Vercel)
+9. FAQ/Troubleshooting
+10. Contributing
+11. License
+
+### Copy guidelines
+- Use active voice and inclusive language.
+- Prefer exact version numbers when they matter.
+- Keep commands copy-pasteable and idempotent.

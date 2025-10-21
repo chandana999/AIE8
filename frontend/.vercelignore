@@ -1,0 +1,39 @@
+# Ignore virtual environment
+langchain_env/
+venv/
+env/
+
+# Ignore node_modules
+node_modules/
+frontend/node_modules/
+
+# Ignore large data files
+*.csv
+*.json
+*.log
+
+# Ignore development files
+.cursor/
+.git/
+*.ipynb
+
+# Ignore cache and temp files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db

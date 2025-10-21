@@ -137,3 +137,4 @@ jspm_packages/
 # API keys and sensitive data
 secrets.txt
 api_keys.txt
+.vercel

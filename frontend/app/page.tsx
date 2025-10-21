@@ -51,7 +51,7 @@ export default function Home() {
   }
 
   const getApiUrl = () => {
-    return process.env.NODE_ENV === 'production' ? 'https://your-backend-url.com' : 'http://localhost:8000'
+    return process.env.NODE_ENV === 'production' ? 'https://aie8.onrender.com' : 'http://localhost:8000'
   }
 
   const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {

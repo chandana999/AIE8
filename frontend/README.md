@@ -105,13 +105,13 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ### **Environment Variables**
 ```bash
 # .env.local
-NEXT_PUBLIC_API_URL=http://localhost:8000
+NEXT_PUBLIC_API_URL=https://aie8.onrender.com
 ```
 
 ### **API Configuration**
 The frontend automatically detects the environment:
-- **Development**: `http://localhost:8000`
-- **Production**: Uses `NEXT_PUBLIC_API_URL`
+- **Development**: `http://localhost:8000` (local backend)
+- **Production**: `https://aie8.onrender.com` (Render deployment)
 
 ## 📱 **Responsive Design**
 
@@ -169,7 +169,7 @@ The frontend automatically detects the environment:
 1. Connect GitHub repository to Vercel
 2. Set environment variables:
    ```bash
-   NEXT_PUBLIC_API_URL=https://your-backend-url.onrender.com
+   NEXT_PUBLIC_API_URL=https://aie8.onrender.com
    ```
 3. Deploy automatically on git push
 

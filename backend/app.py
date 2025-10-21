@@ -214,7 +214,9 @@ def initialize_multi_agent_system(openai_api_key: str, tavily_api_key: str):
                 super().__init__(file_path, encoding=encoding)
         
         # Load documents with proper Unicode handling (same as notebook)
-        directory_loader = DirectoryLoader("../data/web_incidents", glob="**/*.md", loader_cls=UnicodeTextLoader)
+        # Use absolute path for Vercel deployment
+        data_path = os.path.join(os.path.dirname(__file__), "..", "data", "web_incidents")
+        directory_loader = DirectoryLoader(data_path, glob="**/*.md", loader_cls=UnicodeTextLoader)
         all_knowledge_documents = directory_loader.load()
         print(f"✅ Successfully loaded {len(all_knowledge_documents)} knowledge documents")
         

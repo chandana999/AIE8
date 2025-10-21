@@ -17,8 +17,6 @@ The system integrates **semantic retrieval (vector search)**, **keyword-based re
 Unlike manual or rule-based systems, this AI-driven approach can understand **log semantics**, detect **hidden error relationships**, and generate **remediation recommendations in real time**.  
 It reduces analysis time by **70%**, increases **root cause accuracy to 95%**, and standardizes how SREs investigate incidents improving both speed and reliability during critical events.
 
----
-
 ### Success Metrics
  Goals:**
 - Enhanced SRE Confidence: Engineers feel more prepared for complex incidents

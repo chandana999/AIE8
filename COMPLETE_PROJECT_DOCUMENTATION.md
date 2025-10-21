@@ -15,19 +15,12 @@ The system integrates **semantic retrieval (vector search)**, **keyword-based re
 
 **Why is this the best solution?**  
 Unlike manual or rule-based systems, this AI-driven approach can understand **log semantics**, detect **hidden error relationships**, and generate **remediation recommendations in real time**.  
-It reduces analysis time by **70%**, increases **root cause accuracy to 95%**, and standardizes how SREs investigate incidents — improving both speed and reliability during critical events.
+It reduces analysis time by **70%**, increases **root cause accuracy to 95%**, and standardizes how SREs investigate incidents improving both speed and reliability during critical events.
 
 ---
 
 ### Success Metrics
-**Quantitative Goals:**
-- Reduce Incident Analysis Time by 70% (from 4 hours to 1.2 hours)
-- Increase First-Call Resolution Rate by 50%
-- Decrease Mean Time to Recovery (MTTR) by 60%
-- Improve Root Cause Accuracy to 95%
-- Reduce False Positive Rate by 60%
-
-**Qualitative Goals:**
+ Goals:**
 - Enhanced SRE Confidence: Engineers feel more prepared for complex incidents
 - Improved Knowledge Transfer: Better sharing of expertise between team members
 - Standardized Procedures: Consistent approach to incident analysis across all teams

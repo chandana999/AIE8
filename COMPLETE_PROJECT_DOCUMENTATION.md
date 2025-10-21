@@ -254,12 +254,6 @@ Below are the results from the additional retrievers tested:
 
 ### 🧠 Conclusion
 
-From this comparison, it’s clear that the **advanced retrieval setup** significantly improves the overall RAG pipeline performance.  
-
-- **Faithfulness** increased substantially (+0.392), meaning the model’s responses are now much more grounded in retrieved evidence.  
-- **Context Recall** saw the largest gain (+0.967), showing that the new retrievers are capturing nearly all relevant information from the knowledge base.  
-- **Answer Relevancy** improved slightly (+0.017), confirming that responses remain closely aligned with user queries.  
-
 Overall, the **Ensemble Retriever** offers a well-balanced and high-performing retrieval strategy, resulting in a **more accurate, context-aware, and reliable RAG system**.
 
 
@@ -279,6 +273,16 @@ How does the performance compare to your original RAG application? Test the adva
 | **Answer Relevancy** | 0.802 | 0.819 | 🔼 +0.017 | Assesses how relevant the generated response is to the user’s query. |
 
 🏆 **Best Overall Retriever:** `ensemble`
+
+### 🧠 Conclusion
+
+From this comparison, it’s clear that the **advanced retrieval setup** significantly improves the overall RAG pipeline performance.  
+
+- **Faithfulness** increased substantially (+0.392), meaning the model’s responses are now much more grounded in retrieved evidence.  
+- **Context Recall** saw the largest gain (+0.967), showing that the new retrievers are capturing nearly all relevant information from the knowledge base.  
+- **Answer Relevancy** improved slightly (+0.017), confirming that responses remain closely aligned with user queries.  
+
+Overall, the **Ensemble Retriever** offers a well-balanced and high-performing retrieval strategy, resulting in a **more accurate, context-aware, and reliable RAG system**.
 
 ---
 

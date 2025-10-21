@@ -316,7 +316,7 @@ Each technique reflects the exact implementation from the notebook and demonstra
 
 Below are the results from the additional retrievers tested:
 
-### 📊 RESULTS SUMMARY
+#### RESULTS SUMMARY
 ---
 
 | **Retriever** | **Faithfulness** | **Context Recall** | **Answer Relevancy** |

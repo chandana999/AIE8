@@ -223,59 +223,21 @@ Focusing on improving retrieval accuracy and recall would likely lead to a much 
 
 ### Advanced Retrieval Techniques
 
-**1. Parent Document Retrieval:**
-```python
-log_parent_retriever = ParentDocumentRetriever(
-    vectorstore=log_vectorstore,
-    docstore=InMemoryStore(),
-    child_splitter=RecursiveCharacterTextSplitter(chunk_size=400),
-    parent_splitter=RecursiveCharacterTextSplitter(chunk_size=2000)
-)
-```
-**Why useful:** Combines precise retrieval (small chunks) with full context (parent docs) for comprehensive log analysis.
+### 📊 RESULTS SUMMARY
+---
 
-**2. BM25 Retrieval:**
-```python
-log_bm25_retriever = BM25Retriever.from_documents(log_docs)
-```
-**Why useful:** Provides keyword-based matching that complements semantic search for specific error codes and technical terms.
+| **Retriever** | **Faithfulness** | **Context Recall** | **Answer Relevancy** |
+|----------------|------------------|--------------------|----------------------|
+| **naive** | 0.802 | 1.000 | 0.818 |
+| **bm25** | 0.950 | 1.000 | 0.795 |
+| **compression** | 0.922 | 1.000 | 0.818 |
+| **multi_query** | 0.760 | 1.000 | 0.832 |
+| **parent** | 0.868 | 0.800 | 0.806 |
+| **ensemble** | 0.973 | 1.000 | 0.819 |
+| **semantic** | 0.902 | 0.867 | 0.811 |
 
-**3. Multi-Query Retrieval:**
-```python
-log_multi_query_retriever = MultiQueryRetriever.from_llm(
-    retriever=log_naive_retriever,
-    llm=ChatOpenAI(model="gpt-4o-mini")
-)
-```
-**Why useful:** Generates multiple query variations to improve retrieval coverage for complex log patterns.
+🏆 **Best Overall Retriever:** `ensemble`
 
-**4. Contextual Compression with Reranking:**
-```python
-compressor = CohereRerank(model="rerank-v3.5")
-log_compression_retriever = ContextualCompressionRetriever(
-    base_compressor=compressor,
-    base_retriever=log_naive_retriever
-)
-```
-**Why useful:** Reranks retrieved documents by relevance to improve answer quality and reduce noise.
-
-**5. Ensemble Retrieval:**
-```python
-log_ensemble_retriever = EnsembleRetriever(
-    retrievers=[log_naive_retriever, log_bm25_retriever, log_multi_query_retriever],
-    weights=equal_weighting
-)
-```
-**Why useful:** Combines multiple retrieval strategies to maximize coverage and accuracy for diverse log analysis scenarios.
-
-**6. Semantic Chunking:**
-```python
-semantic_chunker = SemanticChunker(
-    log_embeddings,
-    breakpoint_threshold_type="percentile"
-)
-```
-**Why useful:** Breaks documents at natural semantic boundaries instead of fixed character limits, preserving logical context.
 
 ## Task 7: Performance Assessment
 

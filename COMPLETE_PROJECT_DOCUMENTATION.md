@@ -343,7 +343,7 @@ Overall, the **Ensemble Retriever** offers a well-balanced and high-performing r
 How does the performance compare to your original RAG application? Test the advanced retrieval method using the RAGAS frameworks to quantify any improvements. Provide results in a table.
 
 
-### 📈 RAG Performance Comparison (Original vs. Advanced Retrieval)
+#### RAG Performance Comparison (Original vs. Advanced Retrieval)
 
 | **Metric** | **Original RAG** | **Advanced Retrieval (Best Retriever: Ensemble)** | **Improvement** | **Description** |
 |-------------|------------------|--------------------------------|----------------|----------------|
@@ -353,7 +353,7 @@ How does the performance compare to your original RAG application? Test the adva
 
 🏆 **Best Overall Retriever:** `ensemble`
 
-### 🧠 Conclusion
+#### Conclusion
 
 From this comparison, it’s clear that the **advanced retrieval setup** significantly improves the overall RAG pipeline performance.  
 
@@ -365,5 +365,21 @@ Overall, the **Ensemble Retriever** offers a well-balanced and high-performing r
 
 ---
 
-**Project Status:** ✅ COMPLETED
+### 2.Articulate the changes that you expect to make to your app in the second half of the course. How will you improve your application?
+
+### Future Implementation (Second Half of the Course)
+
+The **Web Analysis Agent** is already built, providing web-tier diagnostics such as latency spike detection, 5xx error tracking, and suspicious IP analysis.
+
+Next, the application will be extended into a **full multi-tier agentic architecture** with the following components:
+
+- **App Analysis Agent:** Detect application-tier issues using APM traces (exceptions, thread starvation, latency, authentication failures).  
+- **DB Analysis Agent:** Analyze database performance, identify slow queries and deadlocks, and provide query optimization insights via EXPLAIN plans.  
+- **Critique Agent:** Consolidate findings from all agents, resolve conflicts, and ensure evidence-based reporting with provenance tracking.  
+- **Judge Agent:** Prioritize findings by business impact, map root causes to remediation playbooks, and recommend actionable steps with risk assessment.
+
+**Goal:** Evolve the app into an **end-to-end intelligent observability platform** with autonomous multi-tier reasoning and remediation capabilities.
+
+
+
 **Next Steps:** Expand to multi-tier architecture with App and DB analysis agents

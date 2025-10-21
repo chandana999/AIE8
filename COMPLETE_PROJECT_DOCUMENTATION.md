@@ -229,7 +229,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 #### 2. What conclusions can you draw about the performance and effectiveness of your pipeline with this information?
 
-### Key Conclusions
+##### Key Conclusions
 
 From these results, I understand that my **RAG pipeline’s generation component** is performing quite well, while the **retrieval layer needs improvement**.
 

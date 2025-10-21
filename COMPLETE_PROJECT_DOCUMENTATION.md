@@ -250,8 +250,8 @@ Focusing on improving retrieval accuracy and recall would likely lead to a much 
 
 1. Describe the retrieval techniques that you plan to try and to assess in your application. Write one sentence on why you believe each technique will be useful for your use case.
 
-## ⚙️ Advanced Retrieval Techniques  
-### Retrieval Techniques for Log Analysis  
+
+#### Retrieval Techniques for Log Analysis  
 
 #### **1. Naive Vector Retrieval**  
 - **Implementation:**  
@@ -309,7 +309,7 @@ Focusing on improving retrieval accuracy and recall would likely lead to a much 
 
 ---
 
-Each technique reflects the exact implementation from the notebook and demonstrates its specific **use case in log analysis** — enhancing retrieval accuracy, context awareness, and diagnostic effectiveness.
+Each technique reflects the exact implementation from the notebook and demonstrates its specific **use case in log analysis** , enhancing retrieval accuracy, context awareness, and diagnostic effectiveness.
 
 
 2. Test a host of advanced retrieval techniques on your application.

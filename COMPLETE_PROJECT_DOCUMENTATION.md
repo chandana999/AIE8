@@ -18,7 +18,7 @@ Unlike manual or rule-based systems, this AI-driven approach can understand **lo
 It reduces analysis time by **70%**, increases **root cause accuracy to 95%**, and standardizes how SREs investigate incidents improving both speed and reliability during critical events.
 
 ### Success Metrics
- Goals:**
+ Goals:
 - Enhanced SRE Confidence: Engineers feel more prepared for complex incidents
 - Improved Knowledge Transfer: Better sharing of expertise between team members
 - Standardized Procedures: Consistent approach to incident analysis across all teams

@@ -187,7 +187,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 <img width="1105" height="685" alt="image" src="https://github.com/user-attachments/assets/25519b4c-fa54-4dcb-ac56-ca751141c5bc" />
 
-## ✅ COMPLETED: AIE7-Cert-Challenge  
+#### ✅ COMPLETED: AIE7-Cert-Challenge  
 
 - **Main Repository:**  
   [🔗 View on GitHub](https://github.com/chandana999/AIE8/blob/AIops-multi-agent-log-analyzer/README.md)  

@@ -190,7 +190,12 @@ text_splitter = RecursiveCharacterTextSplitter(
 - CORS configuration for cross-origin requests
 - Environment variable management for API keys
 
-## Task 5: Golden Test Dataset
+## Task 5: Creating a Golden Test Data Set
+✅ Deliverables
+
+Assess your pipeline using the RAGAS framework including key metrics faithfulness, response relevance, context precision, and context recall. Provide a table of your output results.
+
+### Golden Datset:
 
 <img width="1135" height="342" alt="image" src="https://github.com/user-attachments/assets/afc3c0f0-ff50-4086-98ec-90604b5501e4" />
 
@@ -205,6 +210,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 | **Answer Relevancy** | 0.8024 | Assesses how relevant the generated response is to the user's query. |
 | **Context Entity Recall** | 0.0333 | Measures how well the retriever captures all relevant entities from the knowledge base. |
 
+2. What conclusions can you draw about the performance and effectiveness of your pipeline with this information?
 
 ### Key Conclusions
 
@@ -223,6 +229,14 @@ Focusing on improving retrieval accuracy and recall would likely lead to a much 
 
 ### Advanced Retrieval Techniques
 
+✅ Deliverables
+
+1. Describe the retrieval techniques that you plan to try and to assess in your application. Write one sentence on why you believe each technique will be useful for your use case.
+
+2. Test a host of advanced retrieval techniques on your application.
+
+Below are the results from the additional retrievers tested:
+
 ### 📊 RESULTS SUMMARY
 ---
 
@@ -239,9 +253,12 @@ Focusing on improving retrieval accuracy and recall would likely lead to a much 
 🏆 **Best Overall Retriever:** `ensemble`
 
 
-## Task 7: Performance Assessment
+## Task 7: Assessing Performance
 
-### System Performance Metrics
+✅ Deliverables
+
+How does the performance compare to your original RAG application? Test the advanced retrieval method using the RAGAS frameworks to quantify any improvements. Provide results in a table.
+
 
 ### 📈 RAG Performance Comparison (Original vs. Advanced Retrieval)
 

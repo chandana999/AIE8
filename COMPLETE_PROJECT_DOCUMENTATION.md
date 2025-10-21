@@ -212,13 +212,13 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 #### 1. Assess your pipeline using the RAGAS framework including key metrics faithfulness, response relevance, context precision, and context recall. Provide a table of your output results.
 
-### Golden Datset:
+##### Golden Datset:
 
 <img width="1135" height="342" alt="image" src="https://github.com/user-attachments/assets/afc3c0f0-ff50-4086-98ec-90604b5501e4" />
 
-### RAGAS Evaluation Results
+##### RAGAS Evaluation Results
 
-### 🧮 RAGAS Evaluation Metrics Summary
+##### 🧮 RAGAS Evaluation Metrics Summary
 
 | **Metric** | **Score** | **Description** |
 |-------------|-----------|-----------------|

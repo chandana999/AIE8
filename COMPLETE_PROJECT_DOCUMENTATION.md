@@ -74,7 +74,7 @@ We are building an intelligent multi-agent RAG system that empowers Site Reliabi
 | **Embedding Model** | OpenAI text-embedding-3-small | Offers optimal balance between performance and cost for semantic similarity matching in log pattern recognition |
 | **Orchestration** | LangGraph | Enables complex multi-agent workflows with state management and conditional routing between specialized analysis agents |
 | **Vector Database** | Qdrant (in-memory) | Delivers fast similarity search for historical incident retrieval and pattern matching during real-time analysis |
-| **Monitoring** | Built-in FastAPI health checks and logging | Provides essential system observability without additional infrastructure complexity for MVP deployment |
+| **Monitoring** | LangSmith | Provides essential observability without additional infrastructure complexity for MVP deployment |
 | **Evaluation** | RAGAS framework | Offers comprehensive evaluation metrics for retrieval quality, answer relevance, and response accuracy in log analysis scenarios |
 | **User Interface** | Next.js with Tailwind CSS | Creates responsive, modern web interface for log upload and analysis results visualization with excellent developer experience |
 | **Serving & Inference** | FastAPI with Uvicorn | Provides high-performance async API for real-time log processing and multi-agent coordination with automatic OpenAPI documentation |
@@ -150,21 +150,12 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 **Why this decision:** 750-character chunks capture complete Apache incident descriptions while maintaining semantic coherence for embedding generation, with no overlap to prevent duplicate information across chunks.
 
-#### Advanced Chunking Impact (Notebook vs Production):
-
-**Basic (Production):**
+**Basic:**
 - Simple 750-char chunks
 - Single retrieval method
 - Fast and reliable
 - Good for standard Apache error patterns
 
-**Advanced (Notebook):**
-- **Parent Document:** 400-char child chunks + 2000-char parent docs
-- **Semantic Chunking:** Natural boundary breaks instead of fixed limits
-- **Ensemble Retrieval:** Combines multiple strategies (BM25, Multi-Query, Reranking)
-- **Impact:** Better precision but higher complexity and latency
-
-**Trade-off:** Advanced methods improve accuracy for complex log patterns but add computational overhead, so production uses the simpler approach for reliability.
 
 ## Task 4: End-to-End Prototype
 
@@ -179,7 +170,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 
 
-**✅ COMPLETED:** See AIE7-Cert-Challenge | README | Frontend README | Backend README
+**✅ COMPLETED:** See AIE7-Cert-Challenge | https://github.com/chandana999/AIE8/blob/AIops-multi-agent-log-analyzer/README.md | Frontend https://github.com/chandana999/AIE8/blob/AIops-multi-agent-log-analyzer/frontend/README.md | Backend https://github.com/chandana999/AIE8/blob/AIops-multi-agent-log-analyzer/backend/README.md
 
 **Key Features Implemented:**
 - FastAPI backend with multi-agent RAG system

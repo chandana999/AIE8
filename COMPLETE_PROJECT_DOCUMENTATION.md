@@ -210,7 +210,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 ## Task 5: Creating a Golden Test Data Set
 ✅ Deliverables
 
-Assess your pipeline using the RAGAS framework including key metrics faithfulness, response relevance, context precision, and context recall. Provide a table of your output results.
+#### 1. Assess your pipeline using the RAGAS framework including key metrics faithfulness, response relevance, context precision, and context recall. Provide a table of your output results.
 
 ### Golden Datset:
 
@@ -227,7 +227,7 @@ Assess your pipeline using the RAGAS framework including key metrics faithfulnes
 | **Answer Relevancy** | 0.8024 | Assesses how relevant the generated response is to the user's query. |
 | **Context Entity Recall** | 0.0333 | Measures how well the retriever captures all relevant entities from the knowledge base. |
 
-2. What conclusions can you draw about the performance and effectiveness of your pipeline with this information?
+#### 2. What conclusions can you draw about the performance and effectiveness of your pipeline with this information?
 
 ### Key Conclusions
 

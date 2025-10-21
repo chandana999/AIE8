@@ -167,10 +167,16 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 <img width="1105" height="685" alt="image" src="https://github.com/user-attachments/assets/25519b4c-fa54-4dcb-ac56-ca751141c5bc" />
 
+## ✅ COMPLETED: AIE7-Cert-Challenge  
 
+- **Main Repository:**  
+  [🔗 View on GitHub](https://github.com/chandana999/AIE8/blob/AIops-multi-agent-log-analyzer/README.md)  
 
+- **Frontend:**  
+  [🌐 Frontend README](https://github.com/chandana999/AIE8/blob/AIops-multi-agent-log-analyzer/frontend/README.md)  
 
-**✅ COMPLETED:** See AIE7-Cert-Challenge | https://github.com/chandana999/AIE8/blob/AIops-multi-agent-log-analyzer/README.md | Frontend https://github.com/chandana999/AIE8/blob/AIops-multi-agent-log-analyzer/frontend/README.md | Backend https://github.com/chandana999/AIE8/blob/AIops-multi-agent-log-analyzer/backend/README.md
+- **Backend:**  
+  [🖥️ Backend README](https://github.com/chandana999/AIE8/blob/AIops-multi-agent-log-analyzer/backend/README.md)
 
 **Key Features Implemented:**
 - FastAPI backend with multi-agent RAG system

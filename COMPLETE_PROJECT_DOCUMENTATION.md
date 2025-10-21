@@ -243,36 +243,17 @@ Focusing on improving retrieval accuracy and recall would likely lead to a much 
 
 ### System Performance Metrics
 
-**Response Time:**
-- Average API response time: 2.3 seconds
-- Log analysis completion: 1.8 seconds
-- Knowledge base retrieval: 0.5 seconds
+### 📈 RAG Performance Comparison (Original vs. Advanced Retrieval)
 
-**Accuracy Metrics:**
-- Apache error pattern matching: 92% accuracy
-- Root cause identification: 87% accuracy
-- Remediation step relevance: 89% accuracy
+| **Metric** | **Original RAG** | **Advanced Retrieval (Best Retriever: Ensemble)** | **Improvement** | **Description** |
+|-------------|------------------|--------------------------------|----------------|----------------|
+| **Faithfulness** | 0.581 | 0.973 | 🔼 +0.392 | Measures how factually accurate responses are compared to the retrieved context. |
+| **Context Recall** | 0.033 | 1.000 | 🔼 +0.967 | Evaluates how well the retriever captures all relevant information for the query. |
+| **Answer Relevancy** | 0.802 | 0.819 | 🔼 +0.017 | Assesses how relevant the generated response is to the user’s query. |
 
-**Scalability:**
-- Concurrent users supported: 50+
-- Knowledge base size: 6 incident documents
-- Vector database performance: Sub-second similarity search
-
-**Cost Analysis:**
-- OpenAI API costs: $0.02 per analysis
-- Tavily search costs: $0.01 per external query
-- Infrastructure costs: $0.05 per hour (Render + Vercel)
-
-### Performance Optimization Recommendations
-
-1. **Implement Caching:** Cache frequent queries to reduce API costs
-2. **Batch Processing:** Process multiple logs simultaneously
-3. **Async Operations:** Use async/await for concurrent agent processing
-4. **Database Optimization:** Consider persistent Qdrant for larger knowledge bases
-5. **Monitoring:** Add comprehensive logging and metrics collection
+🏆 **Best Overall Retriever:** `ensemble`
 
 ---
 
 **Project Status:** ✅ COMPLETED
-**Deployment:** Production-ready with full documentation
 **Next Steps:** Expand to multi-tier architecture with App and DB analysis agents

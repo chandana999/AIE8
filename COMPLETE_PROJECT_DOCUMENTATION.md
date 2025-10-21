@@ -45,7 +45,7 @@ For Site Reliability Engineers (SREs), this problem manifests as a daily crisis 
 
 ## Task 2: Proposed Solution
 
-##### 1. Write 1-2 paragraphs on your proposed solution.  How will it look and feel to the user?
+#### 1. Write 1-2 paragraphs on your proposed solution.  How will it look and feel to the user?
 
 ### Solution Overview
 We are building an intelligent multi-agent RAG system that empowers Site Reliability Engineers (SREs) and DevOps teams to handle complex web server log analysis with unprecedented speed and accuracy. The solution combines a hybrid knowledge base of historical incident patterns, real-time log data, and expert remediation playbooks with specialized multi-tier agents to deliver contextually appropriate root cause analysis and actionable remediation steps.
@@ -71,7 +71,7 @@ We are building an intelligent multi-agent RAG system that empowers Site Reliabi
 | Critique Agent | Consolidates findings | "Merges worker outputs → Resolves conflicts → Assigns confidence weights → Produces unified claims" |
 | Judge Agent | Final decisions | "Prioritizes findings → Maps to playbooks → Generates remediation steps → Determines automation level" |
 
-##### 2. Describe the tools you plan to use in each part of your stack. Write one sentence on why you made each tooling choice.
+#### 2. Describe the tools you plan to use in each part of your stack. Write one sentence on why you made each tooling choice.
    LLM
    Embedding Model
    Orchestration
@@ -95,7 +95,7 @@ We are building an intelligent multi-agent RAG system that empowers Site Reliabi
 | **User Interface** | Next.js with Tailwind CSS | Creates responsive, modern web interface for log upload and analysis results visualization with excellent developer experience |
 | **Serving & Inference** | FastAPI with Uvicorn | Provides high-performance async API for real-time log processing and multi-agent coordination with automatic OpenAPI documentation |
 
-##### 3.Where will you use an agent or agents? What will you use “agentic reasoning” for in your app?
+#### 3.Where will you use an agent or agents? What will you use “agentic reasoning” for in your app?
 
 #### Current Implementation (POC - Web Logs Only)
 - **LogSearch Agent:** Uses agentic reasoning to analyze unknown error codes and new issues, intelligently querying external web resources via Tavily search to find up-to-date solutions and documentation when internal knowledge base lacks coverage.
@@ -110,6 +110,8 @@ We are building an intelligent multi-agent RAG system that empowers Site Reliabi
 - **Judge Agent:** Strategic agentic reasoning to prioritize findings by business impact, map root causes to remediation playbooks, and generate actionable remediation steps with risk assessment.
 
 ### Data Sources and External APIs
+
+#### 1. Describe all of your data sources and external APIs, and describe what you’ll use them for.
 
 #### Internal Knowledge Base (Web Incidents Only)
 
@@ -152,6 +154,8 @@ We are building an intelligent multi-agent RAG system that empowers Site Reliabi
 - **Purpose:** External web search for unknown error codes and new issues
 - **Usage:** LogSearch Agent queries for up-to-date solutions when internal knowledge base lacks coverage
 
+#### 2. Describe the default chunking strategy that you will use. Why did you make this decision?
+   
 ### Chunking Strategy
 
 **The simplest chunking strategy has been used:**

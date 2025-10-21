@@ -233,6 +233,68 @@ Focusing on improving retrieval accuracy and recall would likely lead to a much 
 
 1. Describe the retrieval techniques that you plan to try and to assess in your application. Write one sentence on why you believe each technique will be useful for your use case.
 
+## ⚙️ Advanced Retrieval Techniques  
+### Retrieval Techniques for Log Analysis  
+
+#### **1. Naive Vector Retrieval**  
+- **Implementation:**  
+  `qdrant_vectorstore.as_retriever(search_kwargs={"k": 5})`  
+- **Why Useful:**  
+  Baseline semantic matching for Apache error patterns (`AH01797`, `AH01084`, `AH01079`) in incident documentation.  
+
+---
+
+#### **2. BM25 Retrieval**  
+- **Implementation:**  
+  `BM25Retriever.from_documents(log_docs)`  
+- **Why Useful:**  
+  Exact keyword matching for specific Apache error codes and technical terms that embeddings might miss.  
+
+---
+
+#### **3. Multi-Query Retrieval**  
+- **Implementation:**  
+  `MultiQueryRetriever.from_llm(retriever=log_naive_retriever, llm=ChatOpenAI(model="gpt-4o-mini"))`  
+- **Why Useful:**  
+  Generates query variations for different SRE descriptions of the same log issues, improving retrieval robustness.  
+
+---
+
+#### **4. Parent Document Retrieval**  
+- **Implementation:**  
+  `ParentDocumentRetriever(child_splitter=400, parent_splitter=2000)`  
+- **Why Useful:**  
+  Enables precise error pattern matching while retaining the full incident context for deeper root cause analysis.  
+
+---
+
+#### **5. Contextual Compression with Reranking**  
+- **Implementation:**  
+  `ContextualCompressionRetriever(base_compressor=CohereRerank(model="rerank-v3.5"))`  
+- **Why Useful:**  
+  Reranks retrieved Apache incident documents by relevance to reduce noise and improve log analysis precision.  
+
+---
+
+#### **6. Ensemble Retrieval**  
+- **Implementation:**  
+  `EnsembleRetriever(retrievers=[naive, bm25, multi_query, parent], weights=equal_weighting)`  
+- **Why Useful:**  
+  Combines vector similarity, keyword matching, and query expansion for comprehensive log pattern coverage.  
+
+---
+
+#### **7. Semantic Chunking**  
+- **Implementation:**  
+  `SemanticChunker(embeddings, breakpoint_threshold_type="percentile")`  
+- **Why Useful:**  
+  Preserves complete Apache error descriptions without breaking the logical flow of incident analysis.  
+
+---
+
+Each technique reflects the exact implementation from the notebook and demonstrates its specific **use case in log analysis** — enhancing retrieval accuracy, context awareness, and diagnostic effectiveness.
+
+
 2. Test a host of advanced retrieval techniques on your application.
 
 Below are the results from the additional retrievers tested:

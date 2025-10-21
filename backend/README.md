@@ -1,174 +1,241 @@
-# Multi-Agent Log Analysis API
+# 🔧 Multi-Agent Log Analyzer - Backend
 
-A FastAPI-based web service that provides intelligent log analysis using a multi-agent RAG system with LangGraph.
+FastAPI backend for the Multi-Agent Log Analyzer system, featuring intelligent routing between specialized agents for comprehensive Apache log analysis.
 
-## Features
+## 🏗️ **Architecture**
 
-- **Multi-Agent Architecture**: LogSearch + LogAnalysisRAG + Supervisor agents
-- **RAG System**: Retrieval Augmented Generation with Qdrant vector store
-- **External Search**: Tavily search integration for up-to-date information
-- **Streaming Responses**: Real-time analysis results
-- **Log File Upload**: Batch processing of log files
-- **Chat Interface**: Interactive log analysis
+The backend implements a sophisticated multi-agent system using LangGraph:
 
-## Quick Start
+```
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│   FastAPI       │    │   Multi-Agent    │    │   Knowledge     │
+│   Endpoints     │◄──►│   System         │◄──►│   Base          │
+│                 │    │                  │    │                 │
+│ • File Upload   │    │ • Supervisor     │    │ • Incident Docs │
+│ • RAG Chat      │    │ • LogSearch      │    │ • Error Patterns│
+│ • Health Check  │    │ • LogAnalysisRAG │    │ • Solutions     │
+└─────────────────┘    └──────────────────┘    └─────────────────┘
+```
 
-### 1. Install Dependencies
+## 🧠 **Multi-Agent System**
 
+### **Supervisor Agent**
+- **Role**: Intelligent routing coordinator
+- **Function**: Analyzes log input and routes to appropriate specialist
+- **Routing Logic**:
+  - Known Apache errors → LogAnalysisRAG
+  - Unknown errors → LogSearch
+  - Multiple error types → LogSearch
+
+### **LogSearch Agent**
+- **Role**: External research specialist
+- **Tools**: Tavily search integration
+- **Use Case**: Unknown error codes, new issues, external documentation
+- **Output**: Web search results with current solutions
+
+### **LogAnalysisRAG Agent**
+- **Role**: Internal knowledge specialist
+- **Tools**: Curated incident knowledge base
+- **Use Case**: Known Apache errors, documented incidents
+- **Output**: Detailed analysis from internal knowledge
+
+## 🚀 **API Endpoints**
+
+### **POST /api/upload-log-file**
+Upload and analyze log files using the multi-agent system.
+
+**Request:**
+- `file`: Log file (.log or .txt)
+- `api_key`: OpenAI API key
+- `tavily_api_key`: Tavily API key (optional)
+
+**Response:**
+```json
+{
+  "success": true,
+  "message": "Log file processed successfully",
+  "chunks_count": 1,
+  "analysis_result": "Multi-agent analysis output"
+}
+```
+
+### **POST /api/rag-chat**
+Direct chat interface with the multi-agent system.
+
+**Request:**
+```json
+{
+  "log_input": "Log entries to analyze",
+  "model": "gpt-4o-mini",
+  "api_key": "your-openai-key",
+  "tavily_api_key": "your-tavily-key"
+}
+```
+
+**Response:** Streaming text response with analysis
+
+### **GET /api/health**
+Health check endpoint.
+
+**Response:**
+```json
+{
+  "status": "ok"
+}
+```
+
+## 🛠️ **Installation**
+
+### **Prerequisites**
+- Python 3.11+
+- OpenAI API Key
+- Tavily API Key (optional)
+
+### **Setup**
 ```bash
+# Install dependencies
 pip install -r requirements.txt
-```
 
-### 2. Set Up Environment
+# Set environment variables (optional)
+export OPENAI_API_KEY="your-openai-key"
+export TAVILY_API_KEY="your-tavily-key"
 
-Copy the example environment file:
-```bash
-cp .env.example .env
-```
-
-### 3. Prepare Data
-
-Ensure you have log incident documents in `../data/web_incidents/` directory:
-```
-data/web_incidents/
-├── incident1.md
-├── incident2.md
-└── ...
-```
-
-### 4. Run the API
-
-```bash
+# Run the application
 python app.py
 ```
 
-The API will be available at `http://localhost:8000`
+The server will start on `http://localhost:8000`
 
-## API Endpoints
+## 📋 **Dependencies**
 
-### Health Check
-- **GET** `/api/health` - Check API status and system initialization
+### **Core Framework**
+- `fastapi==0.104.1` - Web framework
+- `uvicorn==0.24.0` - ASGI server
 
-### Basic Chat
-- **POST** `/api/chat` - Basic OpenAI chat (no RAG)
+### **AI/ML Libraries**
+- `langchain==0.3.27` - LangChain framework
+- `langchain-community==0.3.30` - Community integrations
+- `langchain-core==0.3.78` - Core LangChain components
+- `langchain-openai==0.3.35` - OpenAI integration
+- `langgraph==0.2.56` - Multi-agent framework
 
-### Log Analysis
-- **POST** `/api/rag-chat` - Analyze log entries using multi-agent system
-- **POST** `/api/upload-log-file` - Upload and process log files
+### **Evaluation & Search**
+- `ragas==0.2.5` - RAG evaluation framework
+- `tavily-python==0.3.3` - External search API
 
-## Usage Examples
+### **Vector Storage**
+- `qdrant-client==1.7.3` - Vector database client
 
-### 1. Analyze Single Log Entry
+### **Utilities**
+- `pydantic>=2.7.4` - Data validation
+- `python-multipart==0.0.6` - File upload support
 
+## 🔧 **Configuration**
+
+### **Environment Variables**
 ```bash
-curl -X POST "http://localhost:8000/api/rag-chat" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "log_input": "[error] AH01797: client denied by server configuration",
-    "api_key": "your_openai_api_key"
-  }'
+# Required
+OPENAI_API_KEY=your-openai-api-key
+
+# Optional
+TAVILY_API_KEY=your-tavily-api-key
+PORT=8000
 ```
 
-### 2. Upload Log File
+### **Knowledge Base**
+The system uses a curated knowledge base located in `../data/web_incidents/` containing:
+- Apache 403 Forbidden incidents
+- Apache 502 Bad Gateway incidents
+- Apache 503 Service Unavailable incidents
+- Apache 504 Gateway Timeout incidents
+- Apache SSL/TLS incidents
+- Apache 500 Internal Server Error incidents
 
+## 🎯 **File Validation**
+
+The system includes intelligent file validation:
+
+### **Extension Validation**
+- Accepts: `.log`, `.txt` files
+- Rejects: Other file types
+
+### **Content Validation**
+Validates log content using pattern matching:
+- Date patterns (YYYY-MM-DD)
+- Time patterns (HH:MM:SS)
+- Log levels (error, warn, info, debug)
+- Apache error codes (AH#####)
+- HTTP versions and status codes
+- HTTP methods (GET, POST, PUT, DELETE)
+- Client IP patterns
+
+Files with fewer than 2 log indicators are rejected with detailed error messages.
+
+## 🔄 **Multi-Agent Workflow**
+
+1. **Input Processing**: Log file or text input received
+2. **Supervisor Analysis**: Determines routing strategy
+3. **Agent Selection**: Routes to LogSearch or LogAnalysisRAG
+4. **Analysis Execution**: Specialized agent processes the input
+5. **Result Compilation**: Combines analysis results
+6. **Response Streaming**: Returns formatted analysis
+
+## 🚀 **Deployment**
+
+### **Render Deployment**
+1. Connect GitHub repository to Render
+2. Set build command: `pip install -r requirements.txt`
+3. Set start command: `uvicorn app:app --host 0.0.0.0 --port $PORT`
+4. Set environment variables
+5. Deploy
+
+### **Environment Variables for Production**
 ```bash
+PORT=10000
+OPENAI_API_KEY=your-production-openai-key
+TAVILY_API_KEY=your-production-tavily-key
+```
+
+## 📊 **Monitoring & Logging**
+
+The application includes comprehensive logging:
+- Multi-agent system initialization
+- API key validation status
+- File upload and validation
+- Agent routing decisions
+- Analysis progress and results
+- Error handling and debugging
+
+## 🧪 **Testing**
+
+### **API Testing**
+```bash
+# Health check
+curl http://localhost:8000/api/health
+
+# Upload test file
 curl -X POST "http://localhost:8000/api/upload-log-file" \
-  -F "file=@server.log" \
-  -F "api_key=your_openai_api_key"
+  -F "file=@sample.log" \
+  -F "api_key=your-openai-key"
 ```
 
-### 3. Basic Chat
+### **Interactive API Documentation**
+Visit `http://localhost:8000/docs` for interactive Swagger UI documentation.
 
-```bash
-curl -X POST "http://localhost:8000/api/chat" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "developer_message": "You are a helpful assistant",
-    "user_message": "Hello, how are you?",
-    "api_key": "your_openai_api_key"
-  }'
-```
+## 🔒 **Security**
 
-## Multi-Agent System
+- API key validation and secure storage
+- File type and content validation
+- CORS configuration for frontend integration
+- Input sanitization and error handling
 
-### Agents
+## 📈 **Performance**
 
-1. **LogSearch Agent**
-   - Searches external sources using Tavily
-   - Handles unknown error codes
-   - Provides up-to-date documentation
+- Streaming responses for real-time feedback
+- Efficient multi-agent routing
+- Optimized knowledge base retrieval
+- Caching for improved response times
 
-2. **LogAnalysisRAG Agent**
-   - Uses internal knowledge base
-   - Analyzes known Apache error codes
-   - Provides detailed incident analysis
+---
 
-3. **Supervisor Agent**
-   - Routes requests between agents
-   - Decides which agent to use based on log type
-   - Coordinates multi-agent collaboration
-
-### Decision Logic
-
-- **Use LogAnalysisRAG for:**
-  - Known Apache error codes (AH01797, AH01084, etc.)
-  - Security incidents
-  - Pattern analysis with existing incidents
-
-- **Use LogSearch for:**
-  - Unknown error codes
-  - Multiple error types
-  - Infrastructure issues needing latest solutions
-
-## Required API Keys
-
-Users must provide these API keys through the frontend:
-
-- **OPENAI_API_KEY**: For LLM and embeddings
-- **TAVILY_API_KEY**: For external search functionality
-
-## Data Requirements
-
-The system expects log incident documents in markdown format in the `../data/web_incidents/` directory. Each document should contain:
-
-- Incident description
-- Error patterns
-- Root cause analysis
-- Remediation steps
-
-## Architecture
-
-```
-Frontend → FastAPI → Multi-Agent System → RAG System
-                     ↓
-                 Knowledge Base (Qdrant)
-                     ↓
-                 External Search (Tavily)
-```
-
-## Development
-
-### Running in Development Mode
-
-```bash
-uvicorn app:app --reload --host 0.0.0.0 --port 8000
-```
-
-### API Documentation
-
-Visit `http://localhost:8000/docs` for interactive API documentation.
-
-## Dependencies
-
-- FastAPI 0.104.1
-- LangChain 0.3.27
-- LangGraph 0.2.0
-- OpenAI 1.3.0
-- Qdrant Client 1.6.0
-- Tavily Python 0.3.0
-
-## License
-
-This project is part of the AI Engineer Challenge.
-
-
+**Built with FastAPI, LangChain, and LangGraph for production-ready log analysis**

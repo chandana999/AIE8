@@ -181,13 +181,6 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 **✅ COMPLETED:** See AIE7-Cert-Challenge | README | Frontend README | Backend README
 
-**Deployment Status:**
-- **Backend:** Deployed to Render at `https://aie8.onrender.com`
-- **Frontend:** Deployed to Vercel at `https://aie8.vercel.app`
-- **Multi-Agent System:** Fully functional with LogSearch and LogAnalysisRAG agents
-- **Knowledge Base:** 6 Apache incident documents loaded and vectorized
-- **API Endpoints:** `/api/health`, `/api/analyze-logs` working correctly
-
 **Key Features Implemented:**
 - FastAPI backend with multi-agent RAG system
 - Next.js frontend with log upload and analysis
@@ -199,34 +192,32 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 ## Task 5: Golden Test Dataset
 
+<img width="1135" height="342" alt="image" src="https://github.com/user-attachments/assets/afc3c0f0-ff50-4086-98ec-90604b5501e4" />
+
 ### RAGAS Evaluation Results
 
-| Metric | Score | Description |
-|--------|-------|-------------|
-| **Faithfulness** | 0.85 | Measures how factually accurate the generated responses are compared to the retrieved context |
-| **Response Relevance** | 0.78 | Evaluates how relevant the generated response is to the user's query |
-| **Context Precision** | 0.82 | Measures the proportion of relevant context retrieved from the knowledge base |
-| **Context Recall** | 0.79 | Evaluates how well the retrieval system captures all relevant information for the query |
-| **Answer Relevancy** | 0.81 | Overall relevance of the answer to the user's question |
-| **Answer Correctness** | 0.83 | Accuracy of the answer based on the retrieved context |
+### 🧮 RAGAS Evaluation Metrics Summary
+
+| **Metric** | **Score** | **Description** |
+|-------------|-----------|-----------------|
+| **Faithfulness** | 0.5811 | Measures how factually accurate the generated responses are compared to the retrieved context. |
+| **Factual Correctness (F1)** | 0.9800 | Evaluates factual consistency between the generated answer and reference truth. |
+| **Answer Relevancy** | 0.8024 | Assesses how relevant the generated response is to the user's query. |
+| **Context Entity Recall** | 0.0333 | Measures how well the retriever captures all relevant entities from the knowledge base. |
+
 
 ### Key Conclusions
 
-**Strengths:**
-- **High Faithfulness (0.85):** The system provides factually accurate responses based on retrieved context, indicating reliable knowledge base matching
-- **Good Context Precision (0.82):** The retrieval system effectively identifies relevant Apache incident patterns from the knowledge base
-- **Strong Answer Correctness (0.83):** Generated responses are accurate and actionable for SREs
+From these results, I understand that my **RAG pipeline’s generation component** is performing quite well, while the **retrieval layer needs improvement**.
 
-**Areas for Improvement:**
-- **Response Relevance (0.78):** Some responses could be more directly aligned with user queries, suggesting need for better query understanding
-- **Context Recall (0.79):** The system may miss some relevant context, indicating potential for improved retrieval strategies
-- **Overall Performance:** Scores above 0.75 across all metrics demonstrate solid performance for production use
+- The **high factual correctness (0.98)** shows that the model produces accurate answers when it gets the right context.  
+- The **moderate faithfulness (0.58)** suggests that some outputs may not be fully grounded in retrieved evidence, meaning the model sometimes adds unsupported details.  
+- The **good answer relevancy (0.80)** indicates that responses are generally relevant and aligned with user queries.  
+- However, the **very low context entity recall (0.03)** clearly points to weak retrieval performance — the retriever is not finding enough useful or complete context for the LLM.  
 
-**Recommendations:**
-1. **Enhance Query Processing:** Improve query understanding to boost response relevance
-2. **Expand Knowledge Base:** Add more incident patterns to improve context recall
-3. **Implement Advanced Retrieval:** Consider ensemble methods for better context coverage
-4. **Continuous Evaluation:** Regular RAGAS testing to monitor performance degradation
+**Overall**, these metrics suggest that while the **LLM reasoning and response quality are strong**, the **retrieval system is the main bottleneck**.  
+Focusing on improving retrieval accuracy and recall would likely lead to a much more balanced and effective RAG pipeline.
+
 
 ## Task 6: Advanced Retrieval Benefits
 

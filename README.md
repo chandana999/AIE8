@@ -11,6 +11,10 @@ This project implements a sophisticated log analysis system that combines:
 - **Real-time analysis** with streaming responses
 - **Professional SRE-focused output** with actionable insights
 
+## 🖼️ Project Visuals
+
+![Multi-Agent Log Analyzer](MultiAgentLogAnalyzer.png)
+
 ## 🏗️ **Architecture**
 
 ```

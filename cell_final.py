@@ -1,31 +1,10 @@
-from dotenv import load_dotenv
-from mcp.server.fastmcp import FastMCP
-from tavily import TavilyClient
 import os
 import requests
-from dice_roller import DiceRoller
+from dotenv import load_dotenv
 
+# Load environment variables from .env file
 load_dotenv()
 
-mcp = FastMCP("mcp-server")
-client = TavilyClient(os.getenv("TAVILY_API_KEY"))
-
-@mcp.tool()
-def web_search(query: str) -> str:
-    """Search the web for information about the given query"""
-    search_results = client.get_search_context(query=query)
-    return search_results
-
-@mcp.tool()
-def roll_dice(notation: str, num_rolls: int = 1) -> str:
-    """Roll the dice with the given notation"""
-    roller = DiceRoller(notation, num_rolls)
-    return str(roller)
-
-"""
-Add your own tool here, and then use it through Cursor!
-"""
-@mcp.tool()
 def get_cell_location(mcc: int, mnc: int, lac: int, cid: int, radio: str = "lte"):
     """
     Simple function to get cell tower location using Unwired Labs API.
@@ -45,7 +24,7 @@ def get_cell_location(mcc: int, mnc: int, lac: int, cid: int, radio: str = "lte"
     API_KEY = os.getenv("UNWIRED_API_KEY")  # set your token via env var
 
     if not API_KEY:
-        print("Please set your UNWIRED_API_KEY environment variable.")
+        print("❌ Please set your UNWIRED_API_KEY environment variable.")
         return None
 
     payload = {
@@ -62,7 +41,7 @@ def get_cell_location(mcc: int, mnc: int, lac: int, cid: int, radio: str = "lte"
         data = response.json()
 
         if data.get("status") != "ok":
-            print("API Error:", data.get("message", "Unknown error"))
+            print("⚠️ API Error:", data.get("message", "Unknown error"))
             return None
 
         return {
@@ -73,8 +52,14 @@ def get_cell_location(mcc: int, mnc: int, lac: int, cid: int, radio: str = "lte"
         }
 
     except Exception as e:
-        print("Error:", e)
+        print("❌ Error:", e)
         return None
 
+
+# Example usage
 if __name__ == "__main__":
-    mcp.run(transport="stdio")
+    result = get_cell_location(404, 45, 1234, 5678901)
+    if result:
+        print("\n📍 Location Info:")
+        for k, v in result.items():
+            print(f"{k}: {v}")

@@ -82,12 +82,56 @@ The server provides a `web_search` tool that can be used to search the web for i
 
 There are a few activities for this assignment!
 
-### 🏗️ Activity #1: 
+### 🏗️ Activity #1: Build MCP Server
 
 Choose an API that you enjoy using - and build an MCP server for it!
 
-### 🏗️ Activity #2: 
+**Code Location**: `server.py` - Contains the MCP server implementation with custom tools
+
+### 🏗️ Activity #2: LangGraph Integration
 
 Build a simple LangGraph application that interacts with your MCP Server.
 
-You can find details [here](https://github.com/langchain-ai/langchain-mcp-adapters)!
+**Code Location**: `langgraph_tools.py` - Contains the LangGraph workflow that uses MCP tools
+
+You can find more details [here](https://github.com/langchain-ai/langchain-mcp-adapters)!
+
+## Custom Tools Available
+
+This MCP server includes several custom tools that demonstrate different types of functionality:
+
+### 📡 **Cell Tower Location Tool (`get_cell_location`)**
+
+The `get_cell_location` tool uses the **Unwired Labs API** to find the approximate geographic location of a cell tower based on cellular network parameters.
+
+**What it does:**
+- Takes cellular network identifiers as input:
+  - **MCC** (Mobile Country Code) - Identifies the country
+  - **MNC** (Mobile Network Code) - Identifies the carrier/network
+  - **LAC** (Location Area Code) - Identifies the location area
+  - **CID** (Cell ID) - Identifies the specific cell tower
+- Returns the approximate location including:
+  - **Latitude and Longitude** coordinates
+  - **Accuracy radius** in meters
+  - **Human-readable address** of the location
+
+**Example Usage:**
+```
+Find cell tower location MCC 404, MNC 45, LAC 1234, CID 5678901
+```
+
+**Output:**
+```
+- Latitude: 16.906413
+- Longitude: 76.142876  
+- Accuracy: 44,521 meters
+- Address: Somapura, Sindagi taluku, Vijayapura, Karnataka, 586115, India
+```
+
+**Use Cases:**
+- Network troubleshooting and optimization
+- Location-based services development
+- Emergency services coordination
+- Network coverage analysis
+
+**API Provider:** [Unwired Labs](https://unwiredlabs.com/) - Provides cell tower location services

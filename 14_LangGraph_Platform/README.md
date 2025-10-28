@@ -63,6 +63,9 @@ Compare the `agent` and `agent_helpful` assistants defined in `langgraph.json`. 
 
 Select the `agent_with_helpfulness` and set one or more interrupts (at least one `Before` and one `After`). Try changing values and continuing the turn. 
 
+![Debugging Graph](https://github.com/chandana999/AIE8/blob/s14-assignment/14_LangGraph_Platform/DebuggingGraph.png)
+
+
 #### ❓ Question 2:
 
 What are your thoughts on when you would use a Before interrupt vs. an After interrupt?

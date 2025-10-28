@@ -40,8 +40,6 @@ Compare the `agent` and `agent_helpful` assistants defined in `langgraph.json`. 
 
 ##### ✅ Answer:
 
-##### **Agent Comparison: simple_agent vs agent_with_helpfulness**
-
 ##### **Flow Comparison:**
 
 **simple_agent**: Linear flow → agent → action (if any) → END — no feedback loop.

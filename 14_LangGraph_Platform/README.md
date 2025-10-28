@@ -40,19 +40,19 @@ Compare the `agent` and `agent_helpful` assistants defined in `langgraph.json`. 
 
 ##### ✅ Answer:
 
-## **Agent Comparison: simple_agent vs agent_with_helpfulness**
+##### **Agent Comparison: simple_agent vs agent_with_helpfulness**
 
-### **Flow Comparison:**
+##### **Flow Comparison:**
 
 **simple_agent**: Linear flow → agent → action (if any) → END — no feedback loop.
 
 **agent_with_helpfulness**: Looping flow → agent → action (if any) → helpfulness → (back to agent OR END).
 
-### **Helpfulness Evaluator:**
+##### **Helpfulness Evaluator:**
 
 **Position**: Placed after the agent's final response (when no tools are used).
 
-### **Routing Logic:**
+##### **Routing Logic:**
 
 **Back to agent**: If evaluator says Not Helpful (N).
 

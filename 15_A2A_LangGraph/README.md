@@ -82,6 +82,7 @@ uv run python app/test_client.py
 Build a LangGraph Graph to "use" your application.
 
 Do this by creating a Simple Agent that can make API calls to the 🤖Agent Node above through the A2A protocol. 
+![A2A LangGraph](https://raw.githubusercontent.com/chandana999/AIE8/s15-assignment/15_A2A_LangGraph/A2A_LangGraph.png)
 
 ### ❓ Question #1:
 

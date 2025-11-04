@@ -89,6 +89,24 @@ What are the core components of an `AgentCard`?
 
 ##### ✅ Answer:
 
+An AgentCard includes:
+
+- **name** - agent's display name
+- **description** - what the agent does
+- **url** - where the agent is hosted
+- **version** - agent version
+- **default_input_modes / default_output_modes** - supported input & output types
+- **capabilities** - what the agent supports (e.g., streaming, notifications)
+- **skills** - list of skills with:
+  - id
+  - name
+  - description
+  - tags
+  - example prompts
+
+**Purpose:** It acts like the agent's "profile + API spec" so other agents know how to use it.
+
+
 <br />
 
 ### ❓ Question #2:
@@ -96,6 +114,17 @@ What are the core components of an `AgentCard`?
 Why is A2A (and other such protocols) important in your own words?
 
 ##### ✅ Answer:
+
+A2A matters because it:
+
+- Gives agents a common language to communicate
+- Lets agents discover each other and understand abilities
+- Makes systems modular - different agents can work together
+- Supports streaming, async tasks, error handling
+- Helps future-proof the AI ecosystem (like HTTP did for the web)
+
+**In short:** A2A allows agents to connect and collaborate smoothly, like APIs for AI agents.
+
 
 <br /><br />
 
